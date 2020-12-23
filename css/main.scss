@@ -1,4 +1,4 @@
-// Variables
+//////////////////////////////////////// VARIABLES ////////////////////////////////////////
 $white: #f9f9f9;
 $blue: rgb(29, 88, 175);
 $pink: #ff7a8a;
@@ -10,7 +10,7 @@ $dark-blue: #002333;
 $roboto: "Roboto", sans-serif;
 $lato: "Lato", sans-serif;
 
-// Global
+//////////////////////////////////////// GLOBAL ////////////////////////////////////////
 * {
   box-sizing: inherit;
   margin: 0;
@@ -30,6 +30,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background: $dark-blue;
 }
 
 // scroll bar
@@ -46,7 +47,7 @@ body {
   border-radius: 25px;
 }
 
-//header
+//////////////////////////////////////// HEADER ////////////////////////////////////////
 header {
   min-height: 100vh;
   nav {
@@ -58,6 +59,7 @@ header {
     align-items: center;
     font-family: $roboto;
     min-height: 8vh;
+    animation: nav-links 0.5s;
     .logo {
       background: $white;
       padding: 25px;
@@ -80,10 +82,18 @@ header {
         color: $white;
         text-decoration: none;
         letter-spacing: 2px;
+        display: inline-block;
       }
-      a:hover {
-        color: #02ff74;
-        transition: 0.5s ease;
+      .link::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #02ff74;
+        transition: width 0.3s;
+      }
+      .link:hover::after {
+        width: 100%;
       }
     }
     .hamburger-menu {
@@ -98,121 +108,8 @@ header {
       }
     }
   }
-  //Background Animation
-  .background {
-    background: $dark-blue;
-    width: 100%;
-    height: 100vh;
-  }
 
-  .squares {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    li {
-      position: absolute;
-      display: block;
-      list-style: none;
-      width: 20px;
-      height: 20px;
-      background: rgba(255, 255, 255, 0.2);
-      animation: animate 25s linear infinite;
-      bottom: -150px;
-    }
-  }
-
-  .squares li:nth-child(1) {
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-  }
-
-  .squares li:nth-child(2) {
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-  }
-
-  .squares li:nth-child(3) {
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-  }
-
-  .squares li:nth-child(4) {
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-  }
-
-  .squares li:nth-child(5) {
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-  }
-
-  .squares li:nth-child(6) {
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-  }
-
-  .squares li:nth-child(7) {
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-  }
-
-  .squares li:nth-child(8) {
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-  }
-
-  .squares li:nth-child(9) {
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-  }
-
-  .squares li:nth-child(10) {
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-  }
-
-  @keyframes animate {
-    0% {
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
-    }
-
-    100% {
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
-    }
-  }
+  //////////////////////////////////////// HERO SECTION ////////////////////////////////////////
   .hero {
     z-index: 5;
     position: absolute;
@@ -277,11 +174,13 @@ header {
       }
     }
   }
+  //////////////////////////////////////// SOCIAL LINKS ////////////////////////////////////////
   .socials {
     z-index: 100;
     top: 62%;
     position: absolute;
     left: -8.5rem;
+    animation: social-links 0.5s;
     ul {
       list-style: none;
       li {
@@ -333,7 +232,7 @@ header {
   }
 }
 
-//About section
+//////////////////////////////////////// ABOUT SECTION ////////////////////////////////////////
 #about {
   background: $dark-gray;
   .container-about {
@@ -385,7 +284,7 @@ header {
   }
 }
 
-//Featured Projects
+//////////////////////////////////////// FEATURED PROJECTS ////////////////////////////////////////
 #projects {
   background: $dark-blue;
   .showcase {
@@ -470,18 +369,27 @@ header {
       }
     }
     .card1 {
-      background: url(../images/tic_tac_toe.png) center;
+      background: url(../images/weather_app.png) center;
     }
     .card2 {
-      background: url(../images/restaurant.png) center;
+      background: url(../images/portolfio.png) center;
     }
     .card3 {
+      background: url(../images/todo_list.png) center;
+    }
+    .card4 {
+      background: url(../images/tic_tac_toe.png) center;
+    }
+    .card5 {
+      background: url(../images/restaurant.png) center;
+    }
+    .card6 {
       background: url(../images/library.png) center;
     }
   }
 }
 
-//Contact
+//////////////////////////////////////// CONTACT ME ////////////////////////////////////////
 #contact {
   background: $dark-gray;
   padding: 1.5rem;
@@ -498,7 +406,7 @@ header {
   }
 }
 
-//Mobile
+//////////////////////////////////////// MOBILE DEVICES ////////////////////////////////////////
 @media screen and (max-width: 420px) {
   #home .logo {
     font-size: 0.8rem;
@@ -513,7 +421,7 @@ header {
   }
 }
 
-//Medium-sized Devices
+//////////////////////////////////////// MEDIUM-SIZED DEVICES ////////////////////////////////////////
 @media screen and (max-width: 768px) {
   .links {
     position: absolute;
@@ -537,7 +445,7 @@ header {
   }
 }
 
-//Large Devices
+//////////////////////////////////////// LARGE DEVICES ////////////////////////////////////////
 @media screen and (max-width: 1024px) {
   #about .container-about {
     flex-direction: column;
@@ -563,7 +471,7 @@ header {
   }
 }
 
-// Larger Devices
+//////////////////////////////////////// LARGER DEVICES ////////////////////////////////////////
 @media screen and (max-width: 1280px) {
   #projects #card {
     grid-template-columns: 18rem;
@@ -571,7 +479,7 @@ header {
   }
 }
 
-//mobile navigation
+//////////////////////////////////////// MOBILE NAVIGATION ////////////////////////////////////////
 .nav-active {
   z-index: 1000;
   transform: translateX(0%);
@@ -597,6 +505,24 @@ header {
   }
   to {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+//////////////////////////////////////// PAGE LOAD ANIMATIONS ////////////////////////////////////////
+@keyframes nav-links {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes social-links {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
     transform: translateX(0);
   }
 }

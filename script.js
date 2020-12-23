@@ -1,10 +1,10 @@
-//fixed navbar
+// fixed navbar
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("nav");
   nav.classList.toggle("fixed", window.scrollY > 0);
 });
 
-//hamburger-menu
+// hamburger-menu
 const navSlider = () => {
   const burgerMenu = document.querySelector(".hamburger-menu");
   const nav = document.querySelector(".links");
