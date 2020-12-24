@@ -123,12 +123,10 @@ header {
     h1 {
       white-space: nowrap;
       text-align: center;
-      font-size: calc(1.5rem + 4vw);
+      font-size: calc(1.5rem + 3.2vw);
       font-family: $roboto;
       span {
         color: $purple;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 0.1px;
       }
     }
     p {
@@ -139,6 +137,7 @@ header {
       text-align: center;
       width: 80%;
       margin: 0 auto;
+      padding: 0.5rem;
     }
     .hero-btns {
       white-space: nowrap;
@@ -148,8 +147,8 @@ header {
         display: inline-block;
         font-family: $roboto;
         text-decoration: none;
-        padding: 10px 24px;
-        border-radius: 4px;
+        padding: 10px 32px;
+        border-radius: 25px;
         font-size: 1rem;
         transition: 0.5s ease;
         font-weight: bold;
@@ -174,6 +173,7 @@ header {
       }
     }
   }
+
   //////////////////////////////////////// SOCIAL LINKS ////////////////////////////////////////
   .socials {
     z-index: 100;
@@ -258,15 +258,15 @@ header {
         height: 3px;
         background: $green;
       }
-    }
-    p {
-      margin: 0 auto;
-      padding: 2rem 0 5rem 0;
-      max-width: 67%;
-      color: $light-gray;
-      line-height: 1.7;
-      font-family: $roboto;
-      text-align: justify;
+      p {
+        margin: 0 auto;
+        padding: 2rem 0 5rem 0;
+        max-width: 67%;
+        color: $light-gray;
+        line-height: 1.7;
+        font-family: $roboto;
+        text-align: justify;
+      }
     }
     .student-img {
       width: 40%;
@@ -284,10 +284,78 @@ header {
   }
 }
 
+//////////////////////////////////////// SKILLS ////////////////////////////////////////
+#skills {
+  .header {
+    padding: 5rem 0 2rem 0;
+    h2 {
+      font-size: 2.5rem;
+      position: relative;
+      color: $purple;
+      font-family: $roboto;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      width: 80%;
+      margin: 0 auto;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      margin-left: 1rem;
+      top: 50%;
+      width: 20%;
+      height: 3px;
+      background: $green;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+      background: $dark-gray;
+      height: 22rem;
+      width: 18rem;
+      padding: 1rem;
+      margin: 2rem;
+      text-align: center;
+      font-family: $roboto;
+      transition: 0.5s ease;
+      p {
+        font-size: 4rem;
+        padding: 1rem;
+        color: $green;
+      }
+      h3 {
+        color: #dddddd;
+        padding-bottom: 1rem;
+      }
+      span {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        font-size: 1rem;
+        color: #a0a0a0;
+        line-height: 2;
+        .iconify {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    div:hover {
+      transform: translateY(-5%);
+      box-shadow: 0 5px $green;
+    }
+  }
+}
+
 //////////////////////////////////////// FEATURED PROJECTS ////////////////////////////////////////
 #projects {
   background: $dark-blue;
-  .showcase {
+  .header {
     padding-top: 5rem;
     h2 {
       font-size: 2.5rem;
@@ -355,7 +423,7 @@ header {
           font-family: $lato;
           color: $white;
           background: $green;
-          border-radius: 4px;
+          border-radius: 25px;
           transition: 0.5s ease;
           i {
             padding-right: 5px;
@@ -389,6 +457,19 @@ header {
   }
 }
 
+// reveal projects on scroll down
+.reveal {
+  position: relative;
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0rem);
+  opacity: 1;
+}
+
 //////////////////////////////////////// CONTACT ME ////////////////////////////////////////
 #contact {
   background: $dark-gray;
@@ -398,7 +479,7 @@ header {
   .email {
     color: $light-gray;
     font-family: $lato;
-    font-size: calc(1rem + 0.4vw);
+    font-size: calc(1.3rem + 0.2vw);
     text-decoration: none;
   }
   span {
@@ -428,16 +509,14 @@ header {
     right: 0;
     height: 92vh;
     top: 8vh;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
     transition: 0.5s ease-in;
+    text-transform: uppercase;
     li {
       opacity: 0;
-      a:hover {
-        color: $blue;
-      }
     }
   }
   .hamburger-menu {
@@ -451,8 +530,14 @@ header {
     flex-direction: column;
     .about-me {
       width: 100%;
+      h2 {
+        width: 50%;
+      }
       h2::after {
         width: 20%;
+      }
+      p {
+        width: 50%;
       }
     }
     .student-img {
@@ -464,9 +549,20 @@ header {
       }
     }
   }
+
+  #skills {
+    .header {
+      h2 {
+        width: 50%;
+      }
+    }
+  }
+
   #projects {
-    #title {
-      width: 66%;
+    .header {
+      h2 {
+        width: 50%;
+      }
     }
   }
 }
