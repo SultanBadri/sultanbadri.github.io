@@ -11,15 +11,15 @@
   --text-color: #fff;
   --card-background: #2e3031;
   --skills-span: #b1b1b1;
-  --roboto: "Open Sans", sans-serif;
-  --lato: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --raleway: "Raleway", sans-serif;
 }
 
 .light-mode {
   --gray: rgb(107, 107, 107);
   --dark-gray: white;
   --text-color: #000;
-  --card-background: #e0e0e0;
+  --card-background: #eeeeee;
   --skills-span: rgb(61, 61, 61);
 }
 
@@ -48,6 +48,8 @@ body {
 
 //////////////////////////////////////// HEADER ////////////////////////////////////////
 header {
+  background: url(../images/space.jpg) center;
+  background-size: cover;
   min-height: 100vh;
   nav {
     z-index: 100;
@@ -56,12 +58,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: var(--lato);
+    font-family: var(--raleway);
     min-height: 8vh;
     animation: nav-links 0.5s;
     .logo {
-      color: var(--text-color);
-      font-size: 1.2rem;
+      color: #fff;
+      font-size: 1.3rem;
       text-transform: uppercase;
       letter-spacing: 5px;
       transition: 0.3s;
@@ -80,7 +82,7 @@ header {
         list-style: none;
       }
       a {
-        color: var(--text-color);
+        color: #fff;
         text-decoration: none;
         letter-spacing: 2px;
         display: inline-block;
@@ -151,20 +153,20 @@ header {
     transform: translate(-50%, -50%);
     h1,
     p {
-      color: var(--text-color);
+      color: #fff;
     }
     h1 {
       white-space: nowrap;
       text-align: center;
       font-size: calc(1.5rem + 3.2vw);
-      font-family: var(--roboto);
+      font-family: var(--open-sans);
       span {
         color: var(--red);
       }
     }
     p {
-      font-family: var(--lato);
-      color: var(--gray);
+      font-family: var(--raleway);
+      color: rgb(170, 170, 170);
       line-height: 1.6;
       font-size: calc(14px + 0.5vw);
       text-align: center;
@@ -178,7 +180,7 @@ header {
       a {
         margin: 1rem 0.5rem;
         display: inline-block;
-        font-family: var(--roboto);
+        font-family: var(--open-sans);
         text-decoration: none;
         padding: 10px 32px;
         border-radius: 25px;
@@ -188,11 +190,10 @@ header {
         letter-spacing: 1px;
       }
       .about {
-        color: var(--text-color);
+        color: #fff;
         border: 2px solid var(--red);
       }
       .about:hover {
-        color: #fff;
         background: var(--red);
       }
       .projects-btn {
@@ -220,7 +221,7 @@ header {
         a {
           text-decoration: none;
           color: #fff;
-          font-family: var(--lato);
+          font-family: var(--raleway);
           font-size: 1.2rem;
           padding: 1.2rem;
           display: block;
@@ -283,7 +284,7 @@ header {
       h2 {
         font-size: 2.5rem;
         position: relative;
-        font-family: var(--roboto);
+        font-family: var(--open-sans);
         color: #fff;
         letter-spacing: 2px;
         padding-top: 5rem;
@@ -306,7 +307,7 @@ header {
         max-width: 67%;
         color: rgb(170, 170, 170);
         line-height: 1.7;
-        font-family: var(--roboto);
+        font-family: var(--open-sans);
         text-align: justify;
       }
     }
@@ -328,13 +329,14 @@ header {
 
 //////////////////////////////////////// SKILLS ////////////////////////////////////////
 #skills {
+  background: var(--dark-gray);
   padding: 7rem 0;
   .header {
     h2 {
       font-size: 2.5rem;
       position: relative;
       color: var(--text-color);
-      font-family: var(--roboto);
+      font-family: var(--open-sans);
       text-transform: capitalize;
       letter-spacing: 2px;
       width: 80%;
@@ -362,9 +364,9 @@ header {
       height: 22rem;
       width: 18rem;
       padding: 1rem;
-      margin: 2rem;
+      margin: 1.5rem;
       text-align: center;
-      font-family: var(--roboto);
+      font-family: var(--open-sans);
       transition: 0.5s ease;
       p {
         font-size: 4rem;
@@ -401,7 +403,7 @@ header {
       font-size: 2.5rem;
       position: relative;
       color: #fff;
-      font-family: var(--roboto);
+      font-family: var(--open-sans);
       text-transform: capitalize;
       letter-spacing: 2px;
       width: 80%;
@@ -428,27 +430,27 @@ header {
       grid-template-columns: 20rem;
       grid-template-rows: 13rem 13rem 5rem;
       grid-template-areas: "image" "text" "buttons";
-      border-radius: 18px;
+      border-radius: 19px;
       background: var(--dark-gray);
       text-align: center;
       margin: 4rem auto 4rem auto;
       .card-img {
         grid-area: image;
-        border-top-left-radius: 18px;
-        border-top-right-radius: 18px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
         background-size: cover;
       }
       .card-text {
         grid-area: text;
         margin: 1.5rem;
         h2 {
-          font-family: var(--roboto);
+          font-family: var(--open-sans);
           padding: 1rem;
           color: var(--text-color);
         }
         p {
           color: var(--gray);
-          font-family: var(--lato);
+          font-family: var(--raleway);
           line-height: 1.6;
         }
       }
@@ -460,7 +462,7 @@ header {
           padding: 8px 24px;
           outline: none;
           border: none;
-          font-family: var(--lato);
+          font-family: var(--raleway);
           color: var(--text-color);
           background: var(--red);
           border-radius: 25px;
@@ -518,8 +520,8 @@ header {
   span,
   .email {
     color: var(--gray);
-    font-family: var(--lato);
-    font-size: calc(1.3rem + 0.2vw);
+    font-family: var(--raleway);
+    font-size: calc(1rem + 0.2vw);
     text-decoration: none;
   }
   span {
@@ -545,6 +547,7 @@ header {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-property: background-color, color;
+  z-index: 1;
 }
 
 #back-to-top:hover,
@@ -587,16 +590,145 @@ header {
 }
 
 //////////////////////////////////////// MOBILE DEVICES ////////////////////////////////////////
-@media screen and (max-width: 420px) {
-  #home .logo {
-    font-size: 0.8rem;
+@media screen and (max-width: 360px) {
+  #home {
+    .hero {
+      .student {
+        font-size: 0.6rem;
+      }
+      .hero-btns {
+        #about-btn,
+        #projects-btn {
+          padding: 6px 16px;
+          font-size: 0.7rem;
+        }
+      }
+    }
   }
-  #projects .container {
-    width: 100%;
-    .card {
-      grid-template-columns: 18rem;
-      grid-template-rows: 11rem 11rem 4rem;
-      margin: 2rem auto;
+
+  #socials {
+    top: 61%;
+    left: -9.5rem;
+    ul {
+      li {
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    #about-me {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  #skills {
+    #header {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+    #container {
+      div {
+        height: 20rem;
+        width: 16rem;
+        p {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #projects {
+    #header {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+    .container {
+      #card {
+        grid-template-columns: 15rem;
+        .card-text {
+          h2 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        .card-buttons {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #home {
+    .logo {
+      font-size: 0.9rem;
+    }
+    .hero {
+      .hero-btns {
+        .about,
+        .projects-btn {
+          padding: 8px 24px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    .container-about {
+      .about-me {
+        width: 100%;
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          min-width: 70%;
+        }
+      }
+    }
+  }
+
+  #skills {
+    .header {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    #container {
+      div {
+        margin: 1.5rem auto;
+      }
+    }
+  }
+
+  #projects {
+    .header h2 {
+      font-size: 2rem;
+    }
+    .container {
+      width: 100%;
+      .card {
+        grid-template-columns: 18rem;
+        grid-template-rows: 10rem 10rem 4rem;
+        margin: 2rem auto;
+      }
     }
   }
 }
@@ -618,13 +750,14 @@ header {
       opacity: 0;
     }
   }
+
   .hamburger-menu {
     display: block !important;
   }
 
   #back-to-top {
-    bottom: 5%;
-    right: 6%;
+    bottom: 6%;
+    right: 5%;
     font-size: 1rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -675,6 +808,16 @@ header {
 }
 
 //////////////////////////////////////// LARGER DEVICES ////////////////////////////////////////
+@media screen and (max-width: 1260px) {
+  #skills {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 @media screen and (max-width: 1280px) {
   #projects #card {
     grid-template-columns: 18rem;

@@ -9,15 +9,15 @@
   --text-color: #fff;
   --card-background: #2e3031;
   --skills-span: #b1b1b1;
-  --roboto: "Open Sans", sans-serif;
-  --lato: "Raleway", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+  --raleway: "Raleway", sans-serif;
 }
 
 .light-mode {
   --gray: rgb(107, 107, 107);
   --dark-gray: white;
   --text-color: #000;
-  --card-background: #e0e0e0;
+  --card-background: #eeeeee;
   --skills-span: rgb(61, 61, 61);
 }
 
@@ -50,6 +50,8 @@ body {
 }
 
 header {
+  background: url(../images/space.jpg) center;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -65,15 +67,15 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: var(--lato);
+  font-family: var(--raleway);
   min-height: 8vh;
   -webkit-animation: nav-links 0.5s;
           animation: nav-links 0.5s;
 }
 
 header nav .logo {
-  color: var(--text-color);
-  font-size: 1.2rem;
+  color: #fff;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 5px;
   -webkit-transition: 0.3s;
@@ -101,7 +103,7 @@ header nav .links li {
 }
 
 header nav .links a {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   letter-spacing: 2px;
   display: inline-block;
@@ -180,14 +182,14 @@ header .hero {
 
 header .hero h1,
 header .hero p {
-  color: var(--text-color);
+  color: #fff;
 }
 
 header .hero h1 {
   white-space: nowrap;
   text-align: center;
   font-size: calc(1.5rem + 3.2vw);
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
 }
 
 header .hero h1 span {
@@ -195,8 +197,8 @@ header .hero h1 span {
 }
 
 header .hero p {
-  font-family: var(--lato);
-  color: var(--gray);
+  font-family: var(--raleway);
+  color: #aaaaaa;
   line-height: 1.6;
   font-size: calc(14px + 0.5vw);
   text-align: center;
@@ -213,7 +215,7 @@ header .hero .hero-btns {
 header .hero .hero-btns a {
   margin: 1rem 0.5rem;
   display: inline-block;
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   text-decoration: none;
   padding: 10px 32px;
   border-radius: 25px;
@@ -225,12 +227,11 @@ header .hero .hero-btns a {
 }
 
 header .hero .hero-btns .about {
-  color: var(--text-color);
+  color: #fff;
   border: 2px solid var(--red);
 }
 
 header .hero .hero-btns .about:hover {
-  color: #fff;
   background: var(--red);
 }
 
@@ -261,7 +262,7 @@ header .socials ul {
 header .socials ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: var(--lato);
+  font-family: var(--raleway);
   font-size: 1.2rem;
   padding: 1.2rem;
   display: block;
@@ -337,7 +338,7 @@ header .socials ul li a:hover {
 #about .container-about .about-me h2 {
   font-size: 2.5rem;
   position: relative;
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   color: #fff;
   letter-spacing: 2px;
   padding-top: 5rem;
@@ -362,7 +363,7 @@ header .socials ul li a:hover {
   max-width: 67%;
   color: #aaaaaa;
   line-height: 1.7;
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   text-align: justify;
 }
 
@@ -394,6 +395,7 @@ header .socials ul li a:hover {
 }
 
 #skills {
+  background: var(--dark-gray);
   padding: 7rem 0;
 }
 
@@ -401,7 +403,7 @@ header .socials ul li a:hover {
   font-size: 2.5rem;
   position: relative;
   color: var(--text-color);
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   text-transform: capitalize;
   letter-spacing: 2px;
   width: 80%;
@@ -437,9 +439,9 @@ header .socials ul li a:hover {
   height: 22rem;
   width: 18rem;
   padding: 1rem;
-  margin: 2rem;
+  margin: 1.5rem;
   text-align: center;
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -485,7 +487,7 @@ header .socials ul li a:hover {
   font-size: 2.5rem;
   position: relative;
   color: #fff;
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   text-transform: capitalize;
   letter-spacing: 2px;
   width: 80%;
@@ -523,7 +525,7 @@ header .socials ul li a:hover {
   -ms-grid-rows: 13rem 13rem 5rem;
       grid-template-rows: 13rem 13rem 5rem;
       grid-template-areas: "image" "text" "buttons";
-  border-radius: 18px;
+  border-radius: 19px;
   background: var(--dark-gray);
   text-align: center;
   margin: 4rem auto 4rem auto;
@@ -533,8 +535,8 @@ header .socials ul li a:hover {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: image;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   background-size: cover;
 }
 
@@ -546,14 +548,14 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-text h2 {
-  font-family: var(--roboto);
+  font-family: var(--open-sans);
   padding: 1rem;
   color: var(--text-color);
 }
 
 #projects .container .card .card-text p {
   color: var(--gray);
-  font-family: var(--lato);
+  font-family: var(--raleway);
   line-height: 1.6;
 }
 
@@ -569,7 +571,7 @@ header .socials ul li a:hover {
   padding: 8px 24px;
   outline: none;
   border: none;
-  font-family: var(--lato);
+  font-family: var(--raleway);
   color: var(--text-color);
   background: var(--red);
   border-radius: 25px;
@@ -636,8 +638,8 @@ header .socials ul li a:hover {
 #contact span,
 #contact .email {
   color: var(--gray);
-  font-family: var(--lato);
-  font-size: calc(1.3rem + 0.2vw);
+  font-family: var(--raleway);
+  font-size: calc(1rem + 0.2vw);
   text-decoration: none;
 }
 
@@ -665,6 +667,7 @@ header .socials ul li a:hover {
           transition-timing-function: ease-in-out;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
+  z-index: 1;
 }
 
 #back-to-top:hover,
@@ -739,9 +742,86 @@ header .socials ul li a:hover {
   }
 }
 
+@media screen and (max-width: 360px) {
+  #home .hero .student {
+    font-size: 0.6rem;
+  }
+  #home .hero .hero-btns #about-btn,
+  #home .hero .hero-btns #projects-btn {
+    padding: 6px 16px;
+    font-size: 0.7rem;
+  }
+  #socials {
+    top: 61%;
+    left: -9.5rem;
+  }
+  #socials ul li a {
+    font-size: 0.8rem;
+  }
+  #about #about-me h2 {
+    font-size: 1.8rem;
+  }
+  #skills #header h2 {
+    font-size: 1.8rem;
+  }
+  #skills #container div {
+    height: 20rem;
+    width: 16rem;
+  }
+  #skills #container div p {
+    font-size: 2.5rem;
+  }
+  #skills #container div h3 {
+    font-size: 1.2rem;
+  }
+  #skills #container div span {
+    font-size: 0.8rem;
+  }
+  #projects #header h2 {
+    font-size: 1.8rem;
+  }
+  #projects .container #card {
+    -ms-grid-columns: 15rem;
+        grid-template-columns: 15rem;
+  }
+  #projects .container #card .card-text h2 {
+    font-size: 1.2rem;
+  }
+  #projects .container #card .card-text p {
+    font-size: 0.8rem;
+  }
+  #projects .container #card .card-buttons {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 420px) {
   #home .logo {
+    font-size: 0.9rem;
+  }
+  #home .hero .hero-btns .about,
+  #home .hero .hero-btns .projects-btn {
+    padding: 8px 24px;
     font-size: 0.8rem;
+  }
+  #about .container-about .about-me {
+    width: 100%;
+  }
+  #about .container-about .about-me h2 {
+    font-size: 2rem;
+  }
+  #about .container-about .about-me p {
+    font-size: 1rem;
+    min-width: 70%;
+  }
+  #skills .header h2 {
+    font-size: 2rem;
+  }
+  #skills #container div {
+    margin: 1.5rem auto;
+  }
+  #projects .header h2 {
+    font-size: 2rem;
   }
   #projects .container {
     width: 100%;
@@ -749,8 +829,8 @@ header .socials ul li a:hover {
   #projects .container .card {
     -ms-grid-columns: 18rem;
         grid-template-columns: 18rem;
-    -ms-grid-rows: 11rem 11rem 4rem;
-        grid-template-rows: 11rem 11rem 4rem;
+    -ms-grid-rows: 10rem 10rem 4rem;
+        grid-template-rows: 10rem 10rem 4rem;
     margin: 2rem auto;
   }
 }
@@ -782,8 +862,8 @@ header .socials ul li a:hover {
     display: block !important;
   }
   #back-to-top {
-    bottom: 5%;
-    right: 6%;
+    bottom: 6%;
+    right: 5%;
     font-size: 1rem;
     width: 2.5rem;
     height: 2.5rem;
@@ -822,6 +902,21 @@ header .socials ul li a:hover {
   }
   #projects .header h2 {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  #skills .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

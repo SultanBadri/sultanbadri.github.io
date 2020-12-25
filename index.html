@@ -21,7 +21,9 @@
   </head>
   <body>
     <!-- BACK TO TOP BUTTON -->
-    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <button id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- HEADER -->
     <header id="home">
@@ -59,8 +61,10 @@
           Full-time undergraduate with passion for learning web development.
         </p>
         <div class="hero-btns">
-          <a href="#about" class="about">About me</a>
-          <a href="#projects" class="projects-btn">Projects</a>
+          <a href="#about" class="about" id="about-btn">About me</a>
+          <a href="#projects" class="projects-btn" id="projects-btn"
+            >Projects</a
+          >
         </div>
       </div>
 
@@ -103,16 +107,16 @@
     <!-- ABOUT ME -->
     <section id="about">
       <div class="container-about">
-        <div class="about-me">
-          <h2>About me</h2>
+        <div class="about-me" id="about-me">
+          <h2>About Me</h2>
           <p>
             I'm currently an undergraduate looking to improve my knowledge in
-            web development. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Sapiente illo dolor quaerat quidem nemo maxime, suscipit ex
-            sit distinctio nisi nulla sint delectus, accusamus repellat autem
-            aut ipsa accusantium consequatur ipsum, totam nesciunt? Assumenda
-            enim ex vitae beatae impedit, sapiente quisquam unde distinctio.
-            Minima, ad aspernatur nobis distinctio nisi animi?
+            web development. I'm a student at UC Berkeley, and I intend to major
+            in computer science. My programming journey kickstarted when I
+            learned to make a simple HTML website on Microsoft's notepad
+            program. The Odin Project's Full Stack JavaScript Curriculum is just
+            one of the ways I'm learning to code now. Outside of coding, I like
+            to play board games, video games, and learn Spanish.
           </p>
         </div>
         <div class="student-img">
@@ -123,11 +127,11 @@
 
     <!-- SKILLS -->
     <section id="skills">
-      <div class="header">
-        <h2>My skills</h2>
+      <div class="header" id="header">
+        <h2>My Skills</h2>
       </div>
 
-      <div class="container">
+      <div class="container" id="container">
         <div class="languages">
           <p><i class="fas fa-code"></i></p>
           <h3>Languages</h3>
@@ -234,7 +238,7 @@
 
     <!-- PROJECT SHOWCASE -->
     <section id="projects">
-      <div class="header">
+      <div class="header" id="header">
         <h2>Projects</h2>
       </div>
 
