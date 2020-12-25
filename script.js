@@ -1,11 +1,21 @@
-// make navbar fixed
-window.addEventListener("scroll", () => {
-  const nav = document.querySelector("nav");
-  nav.classList.toggle("fixed", window.scrollY > 0);
+const backToTopButton = document.getElementById("back-to-top");
+const colorToggle = document.getElementById("color-toggle-input");
+
+// Typing effect with typed.js
+const typed = new Typed(".animate", {
+  strings: ["student.", "coder."],
+  typeSpeed: 100,
+  backSpeed: 100,
 });
 
-// reveal projects when scrolling down
-window.addEventListener("scroll", () => {
+// Make navbar fixed
+function stickyNav() {
+  const nav = document.querySelector("nav");
+  nav.classList.toggle("fixed", window.scrollY > 0);
+}
+
+// Reveal projects
+function revealProjects() {
   const reveal = document.querySelector(".reveal");
 
   const windowHeight = window.innerHeight;
@@ -15,10 +25,10 @@ window.addEventListener("scroll", () => {
   if (revealTop < windowHeight - revealPoint) {
     reveal.classList.add("active");
   }
-});
+}
 
-// hamburger-menu
-const navSlider = () => {
+// Mobile hamburger-menu
+function navSlider() {
   const burgerMenu = document.querySelector(".hamburger-menu");
   const nav = document.querySelector(".links");
   const links = document.querySelectorAll(".links li");
@@ -37,5 +47,54 @@ const navSlider = () => {
     });
     burgerMenu.classList.toggle("toggle");
   });
-};
+}
 navSlider();
+
+// Button entrance and exit
+function scrollDownFunction() {
+  if (window.pageYOffset > 1800) {
+    // Show backToTopButton
+    if (!backToTopButton.classList.contains("btn-entrance")) {
+      backToTopButton.classList.remove("btn-exit");
+      backToTopButton.classList.add("btn-entrance");
+      backToTopButton.style.display = "block";
+    }
+  } else {
+    // Hide backToTopButton
+    if (backToTopButton.classList.contains("btn-entrance")) {
+      backToTopButton.classList.remove("btn-entrance");
+      backToTopButton.classList.add("btn-exit");
+      setTimeout(() => {
+        backToTopButton.style.display = "none";
+      }, 250);
+    }
+  }
+}
+
+// Back to top button
+function backToTop() {
+  window.scrollTo(0, 0);
+}
+
+// Toggle dark mode
+function checkMode() {
+  if (colorToggle.checked) {
+    darkModeOn();
+  } else {
+    darkModeOff();
+  }
+}
+
+function darkModeOn() {
+  document.body.classList.add("light-mode");
+}
+
+function darkModeOff() {
+  document.body.classList.remove("light-mode");
+}
+
+window.addEventListener("scroll", stickyNav);
+window.addEventListener("scroll", revealProjects);
+window.addEventListener("scroll", scrollDownFunction);
+backToTopButton.addEventListener("click", backToTop);
+colorToggle.addEventListener("click", checkMode);
