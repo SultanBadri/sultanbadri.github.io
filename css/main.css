@@ -289,10 +289,6 @@ header .socials ul li .email {
   background: var(--red);
 }
 
-header .socials ul li .resume {
-  background: #a8026f;
-}
-
 header .socials ul li a:hover {
   -webkit-transform: translate(120px, 0);
           transform: translate(120px, 0);
@@ -752,7 +748,7 @@ header .socials ul li a:hover {
     font-size: 0.7rem;
   }
   #socials {
-    top: 61%;
+    top: 65%;
     left: -9.5rem;
   }
   #socials ul li a {
