@@ -3,7 +3,7 @@
 
 //////////////////////////////////////// VARIABLES ////////////////////////////////////////
 :root {
-  --red: #f73859;
+  --red: #e43956c4;
   --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
@@ -59,14 +59,14 @@ header {
     justify-content: space-around;
     align-items: center;
     font-family: var(--raleway);
-    min-height: 8vh;
+    min-height: 6vh;
     animation: nav-links 0.5s;
     .logo {
       color: #fff;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       text-transform: uppercase;
       letter-spacing: 5px;
-      transition: 0.3s;
+      transition: 0.3s ease;
       span {
         color: var(--red);
       }
@@ -92,9 +92,9 @@ header {
         position: relative;
         display: block;
         width: 0;
-        height: 2px;
+        height: 5px;
         background: var(--red);
-        transition: width 0.3s;
+        transition: width 0.3s ease;
       }
       .link:hover::after {
         width: 100%;
@@ -115,6 +115,7 @@ header {
 
   //////////////////////////////////////// DARK MODE TOGGLE ////////////////////////////////////////
   .color-toggle-label {
+    margin: -0.2rem;
     width: 3rem;
     height: 1.6rem;
     border-radius: 25px;
@@ -256,7 +257,8 @@ header {
   top: 0;
   width: 100%;
   background: var(--red);
-  transition: 0.3s;
+  transition: 0.3s ease;
+  backdrop-filter: blur(8px);
   .logo {
     color: var(--text-color);
     span {
@@ -287,6 +289,9 @@ header {
         padding-top: 5rem;
         width: 66%;
         margin: 0 auto;
+        span {
+          color: var(--red);
+        }
       }
       h2::after {
         content: "";
@@ -338,6 +343,9 @@ header {
       letter-spacing: 2px;
       width: 80%;
       margin: 0 auto;
+      span {
+        color: var(--red);
+      }
     }
     h2::after {
       content: "";
@@ -405,6 +413,9 @@ header {
       letter-spacing: 2px;
       width: 80%;
       margin: 0 auto;
+      span {
+        color: var(--red);
+      }
     }
     h2::after {
       content: "";
@@ -431,6 +442,7 @@ header {
       background: var(--dark-gray);
       text-align: center;
       margin: 4rem auto 4rem auto;
+      transition: 0.3s ease;
       .card-img {
         grid-area: image;
         border-top-left-radius: 16px;
@@ -523,6 +535,7 @@ header {
     font-family: var(--raleway);
     font-size: calc(1rem + 0.2vw);
     text-decoration: none;
+    font-weight: bold;
   }
   span {
     color: var(--red);
@@ -676,8 +689,14 @@ header {
 
 @media screen and (max-width: 420px) {
   #home {
+    #hamburger-menu {
+      div {
+        height: 2.7px;
+        margin: 4px;
+      }
+    }
     .logo {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     .hero {
       .hero-btns {
@@ -734,21 +753,28 @@ header {
 }
 
 //////////////////////////////////////// MEDIUM-SIZED DEVICES ////////////////////////////////////////
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
+  #nav {
+    min-height: 8vh;
+  }
+
   .links {
     position: absolute;
     right: 0;
     height: 92vh;
     top: 8vh;
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
     transition: 0.5s ease-in;
-    text-transform: uppercase;
     li {
       opacity: 0;
     }
+  }
+
+  #home .fixed {
+    background: #e43955;
   }
 
   .hamburger-menu {
@@ -829,7 +855,7 @@ header {
 .nav-active {
   z-index: 1000;
   transform: translateX(0%);
-  background: var(--red);
+  background: #e43955;
 }
 
 .toggle .line1 {

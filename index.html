@@ -17,7 +17,7 @@
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="script.js" defer></script>
-    <title>Sultan Badri</title>
+    <title>Sultan Badri | Portfolio</title>
   </head>
   <body>
     <!-- BACK TO TOP BUTTON -->
@@ -27,16 +27,28 @@
 
     <!-- HEADER -->
     <header id="home">
-      <nav>
+      <nav id="nav">
         <div class="logo">
           <h3>Sultan <span>Badri</span></h3>
         </div>
 
         <ul class="links">
-          <li><a href="#home" class="link">Home</a></li>
-          <li><a href="#about" class="link">About</a></li>
-          <li><a href="#skills" class="link">Skills</a></li>
-          <li><a href="#projects" class="link">Projects</a></li>
+          <li>
+            <a href="#home" class="link"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about" class="link"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills" class="link"
+              ><i class="fas fa-tools"></i> Skills</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="link"
+              ><i class="fas fa-laptop-code"></i> Projects</a
+            >
+          </li>
 
           <!-- DARK MODE TOGGLE -->
           <div class="color-toggle-container">
@@ -47,7 +59,7 @@
           </div>
         </ul>
 
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" id="hamburger-menu">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -103,7 +115,7 @@
     <section id="about">
       <div class="container-about">
         <div class="about-me" id="about-me">
-          <h2>About Me</h2>
+          <h2><span>About</span> Me</h2>
           <p>
             I'm currently an undergraduate looking to improve my knowledge in
             software and web development. I attend UC Berkeley and will major in
@@ -111,7 +123,7 @@
             to make a simple HTML website on Microsoft's notepad program. The
             Odin Project's Full Stack JavaScript Curriculum is just one of the
             ways I'm learning to code now. Outside of coding, I like to play
-            board and video games, watch MMA, and continuing to learn Spanish.
+            board and video games, watch MMA, and continue to learn Spanish.
           </p>
         </div>
         <div class="student-img">
@@ -123,7 +135,7 @@
     <!-- SKILLS -->
     <section id="skills">
       <div class="header" id="header">
-        <h2>My Skills</h2>
+        <h2>My <span>Skills</span></h2>
       </div>
 
       <div class="container" id="container">
@@ -198,7 +210,17 @@
           ></span>
           <br />
           <span
-            >Visual Studio Code
+            >Figma
+            <span
+              class="iconify"
+              data-icon="grommet-icons:figma"
+              data-inline="false"
+            ></span
+          ></span>
+          <br />
+
+          <span
+            >VS Code
             <span
               class="iconify"
               data-icon="logos:visual-studio-code"
@@ -234,7 +256,7 @@
     <!-- PROJECT SHOWCASE -->
     <section id="projects">
       <div class="header" id="header">
-        <h2>Projects</h2>
+        <h2>My <span>Projects</span></h2>
       </div>
 
       <div class="container reveal">

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 :root {
-  --red: #f73859;
+  --red: #e43956c4;
   --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
@@ -68,18 +68,18 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   font-family: var(--raleway);
-  min-height: 8vh;
+  min-height: 6vh;
   -webkit-animation: nav-links 0.5s;
           animation: nav-links 0.5s;
 }
 
 header nav .logo {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 header nav .logo span {
@@ -114,10 +114,10 @@ header nav .links .link::after {
   position: relative;
   display: block;
   width: 0;
-  height: 2px;
+  height: 5px;
   background: var(--red);
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 header nav .links .link:hover::after {
@@ -139,6 +139,7 @@ header nav .hamburger-menu div {
 }
 
 header .color-toggle-label {
+  margin: -0.2rem;
   width: 3rem;
   height: 1.6rem;
   border-radius: 25px;
@@ -300,8 +301,10 @@ header .socials ul li a:hover {
   top: 0;
   width: 100%;
   background: var(--red);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 #home .fixed .logo {
@@ -340,6 +343,10 @@ header .socials ul li a:hover {
   padding-top: 5rem;
   width: 66%;
   margin: 0 auto;
+}
+
+#about .container-about .about-me h2 span {
+  color: var(--red);
 }
 
 #about .container-about .about-me h2::after {
@@ -404,6 +411,10 @@ header .socials ul li a:hover {
   letter-spacing: 2px;
   width: 80%;
   margin: 0 auto;
+}
+
+#skills .header h2 span {
+  color: var(--red);
 }
 
 #skills .header h2::after {
@@ -490,6 +501,10 @@ header .socials ul li a:hover {
   margin: 0 auto;
 }
 
+#projects .header h2 span {
+  color: var(--red);
+}
+
 #projects .header h2::after {
   content: "";
   position: absolute;
@@ -525,6 +540,8 @@ header .socials ul li a:hover {
   background: var(--dark-gray);
   text-align: center;
   margin: 4rem auto 4rem auto;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 #projects .container .card .card-img {
@@ -641,6 +658,7 @@ header .socials ul li a:hover {
   font-family: var(--raleway);
   font-size: calc(1rem + 0.2vw);
   text-decoration: none;
+  font-weight: bold;
 }
 
 #contact span {
@@ -796,8 +814,12 @@ header .socials ul li a:hover {
 }
 
 @media screen and (max-width: 420px) {
+  #home #hamburger-menu div {
+    height: 2.7px;
+    margin: 4px;
+  }
   #home .logo {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #home .hero .hero-btns .about,
   #home .hero .hero-btns .projects-btn {
@@ -835,13 +857,18 @@ header .socials ul li a:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
+  #nav {
+    min-height: 8vh;
+  }
   .links {
     position: absolute;
     right: 0;
     height: 92vh;
     top: 8vh;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -853,10 +880,12 @@ header .socials ul li a:hover {
             transform: translateX(100%);
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
-    text-transform: uppercase;
   }
   .links li {
     opacity: 0;
+  }
+  #home .fixed {
+    background: #e43955;
   }
   .hamburger-menu {
     display: block !important;
@@ -933,7 +962,7 @@ header .socials ul li a:hover {
   z-index: 1000;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  background: var(--red);
+  background: #e43955;
 }
 
 .toggle .line1 {
