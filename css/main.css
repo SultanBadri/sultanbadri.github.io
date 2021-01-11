@@ -604,30 +604,34 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card1 {
-  background: url(../images/cv.png) center;
+  background: url(../images/memory_cards.png) center;
 }
 
 #projects .container .card2 {
-  background: url(../images/weather_app.png) center;
+  background: url(../images/cv.png) center;
 }
 
 #projects .container .card3 {
-  background: url(../images/portfolio.png) center;
+  background: url(../images/weather_app.png) center;
 }
 
 #projects .container .card4 {
-  background: url(../images/todo_list.png) center;
+  background: url(../images/portfolio.png) center;
 }
 
 #projects .container .card5 {
-  background: url(../images/tic_tac_toe.png) center;
+  background: url(../images/todo_list.png) center;
 }
 
 #projects .container .card6 {
-  background: url(../images/restaurant.png) center;
+  background: url(../images/tic_tac_toe.png) center;
 }
 
 #projects .container .card7 {
+  background: url(../images/restaurant.png) center;
+}
+
+#projects .container .card8 {
   background: url(../images/library.png) center;
 }
 
