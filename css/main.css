@@ -393,8 +393,6 @@ header .socials ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
-  height: 60%;
 }
 
 #skills {
