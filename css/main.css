@@ -859,7 +859,7 @@ header .socials ul li a:hover {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   #nav {
     min-height: 8vh;
   }
