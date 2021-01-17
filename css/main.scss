@@ -357,11 +357,10 @@ header {
   }
   .container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
     div {
       background: var(--card-background);
       height: 22rem;
@@ -391,7 +390,7 @@ header {
       }
     }
     div:hover {
-      transform: translateY(-5%);
+      transform: translateY(-3%);
       box-shadow: 0 5px var(--red);
     }
   }
@@ -429,17 +428,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     margin: auto;
     .card {
       display: grid;
       grid-template-columns: 20rem;
-      grid-template-rows: 13rem 13rem 5rem;
+      grid-template-rows: 13rem 16rem 4rem;
       grid-template-areas: "image" "text" "buttons";
       border-radius: 19px;
       background: var(--dark-gray);
       text-align: center;
-      margin: 4rem auto 4rem auto;
+      margin: 4rem 2rem 4rem 2rem;
       transition: 0.3s ease;
       .card-img {
         grid-area: image;
@@ -449,16 +448,22 @@ header {
       }
       .card-text {
         grid-area: text;
-        margin: 1.5rem;
+        padding: 1.5rem;
         h2 {
           font-family: var(--open-sans);
-          padding: 1rem;
+          padding: 0.5rem 0 1rem 0;
           color: var(--text-color);
         }
         p {
           color: var(--gray);
           font-family: var(--raleway);
           line-height: 1.6;
+        }
+        .made-with {
+          color: var(--gray);
+          font-family: var(--raleway);
+          line-height: 1.6;
+          font-weight: bold;
         }
       }
       .card-buttons {
@@ -635,7 +640,7 @@ header {
   #about {
     #about-me {
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -643,22 +648,13 @@ header {
   #skills {
     #header {
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
     #container {
       div {
-        height: 20rem;
-        width: 16rem;
-        p {
-          font-size: 2.5rem;
-        }
-        h3 {
-          font-size: 1.2rem;
-        }
-        span {
-          font-size: 0.8rem;
-        }
+        height: 18rem;
+        width: 14rem;
       }
     }
   }
@@ -666,12 +662,13 @@ header {
   #projects {
     #header {
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
     .container {
       #card {
         grid-template-columns: 15rem;
+        grid-template-rows: 10rem 13rem 3rem;
         .card-text {
           h2 {
             font-size: 1.2rem;
@@ -681,7 +678,7 @@ header {
           }
         }
         .card-buttons {
-          font-size: 0.8rem;
+          font-size: 0.7rem;
         }
       }
     }
@@ -697,7 +694,7 @@ header {
       }
     }
     .logo {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     .hero {
       .hero-btns {
@@ -715,7 +712,7 @@ header {
       .about-me {
         width: 100%;
         h2 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         p {
           font-size: 1rem;
@@ -728,9 +725,25 @@ header {
   #skills {
     .header {
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
     }
+    .container {
+      div {
+        height: 20rem;
+        width: 16rem;
+        p {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
     #container {
       div {
         margin: 1.5rem auto;
@@ -740,14 +753,13 @@ header {
 
   #projects {
     .header h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
     .container {
       width: 100%;
       .card {
         grid-template-columns: 18rem;
-        grid-template-rows: 10rem 10rem 4rem;
-        margin: 2rem auto;
+        grid-template-rows: 13rem 15rem 4rem;
       }
     }
   }
@@ -845,13 +857,6 @@ header {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  #projects #card {
-    grid-template-columns: 18rem;
-    grid-template-rows: 13rem 13rem 5rem;
-  }
-}
-
 //////////////////////////////////////// MOBILE NAVIGATION ////////////////////////////////////////
 .nav-active {
   z-index: 1000;
@@ -860,7 +865,7 @@ header {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .toggle .line2 {
@@ -868,7 +873,7 @@ header {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 
 @keyframes linkFade {

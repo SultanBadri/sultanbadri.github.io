@@ -429,14 +429,13 @@ header .socials ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 #skills .container div {
@@ -474,8 +473,8 @@ header .socials ul li a:hover {
 }
 
 #skills .container div:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
   -webkit-box-shadow: 0 5px var(--red);
           box-shadow: 0 5px var(--red);
 }
@@ -522,7 +521,7 @@ header .socials ul li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
@@ -531,13 +530,13 @@ header .socials ul li a:hover {
   display: grid;
   -ms-grid-columns: 20rem;
       grid-template-columns: 20rem;
-  -ms-grid-rows: 13rem 13rem 5rem;
-      grid-template-rows: 13rem 13rem 5rem;
+  -ms-grid-rows: 13rem 16rem 4rem;
+      grid-template-rows: 13rem 16rem 4rem;
       grid-template-areas: "image" "text" "buttons";
   border-radius: 19px;
   background: var(--dark-gray);
   text-align: center;
-  margin: 4rem auto 4rem auto;
+  margin: 4rem 2rem 4rem 2rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -555,12 +554,12 @@ header .socials ul li a:hover {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
-  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 #projects .container .card .card-text h2 {
   font-family: var(--open-sans);
-  padding: 1rem;
+  padding: 0.5rem 0 1rem 0;
   color: var(--text-color);
 }
 
@@ -568,6 +567,13 @@ header .socials ul li a:hover {
   color: var(--gray);
   font-family: var(--raleway);
   line-height: 1.6;
+}
+
+#projects .container .card .card-text .made-with {
+  color: var(--gray);
+  font-family: var(--raleway);
+  line-height: 1.6;
+  font-weight: bold;
 }
 
 #projects .container .card .card-buttons {
@@ -779,30 +785,23 @@ header .socials ul li a:hover {
     font-size: 0.8rem;
   }
   #about #about-me h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   #skills #header h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   #skills #container div {
-    height: 20rem;
-    width: 16rem;
-  }
-  #skills #container div p {
-    font-size: 2.5rem;
-  }
-  #skills #container div h3 {
-    font-size: 1.2rem;
-  }
-  #skills #container div span {
-    font-size: 0.8rem;
+    height: 18rem;
+    width: 14rem;
   }
   #projects #header h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   #projects .container #card {
     -ms-grid-columns: 15rem;
         grid-template-columns: 15rem;
+    -ms-grid-rows: 10rem 13rem 3rem;
+        grid-template-rows: 10rem 13rem 3rem;
   }
   #projects .container #card .card-text h2 {
     font-size: 1.2rem;
@@ -811,7 +810,7 @@ header .socials ul li a:hover {
     font-size: 0.8rem;
   }
   #projects .container #card .card-buttons {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -821,7 +820,7 @@ header .socials ul li a:hover {
     margin: 4px;
   }
   #home .logo {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   #home .hero .hero-btns .about,
   #home .hero .hero-btns .projects-btn {
@@ -832,20 +831,33 @@ header .socials ul li a:hover {
     width: 100%;
   }
   #about .container-about .about-me h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #about .container-about .about-me p {
     font-size: 1rem;
     min-width: 70%;
   }
   #skills .header h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  #skills .container div {
+    height: 20rem;
+    width: 16rem;
+  }
+  #skills .container div p {
+    font-size: 2.5rem;
+  }
+  #skills .container div h3 {
+    font-size: 1.2rem;
+  }
+  #skills .container div span {
+    font-size: 0.8rem;
   }
   #skills #container div {
     margin: 1.5rem auto;
   }
   #projects .header h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   #projects .container {
     width: 100%;
@@ -853,9 +865,8 @@ header .socials ul li a:hover {
   #projects .container .card {
     -ms-grid-columns: 18rem;
         grid-template-columns: 18rem;
-    -ms-grid-rows: 10rem 10rem 4rem;
-        grid-template-rows: 10rem 10rem 4rem;
-    margin: 2rem auto;
+    -ms-grid-rows: 13rem 15rem 4rem;
+        grid-template-rows: 13rem 15rem 4rem;
   }
 }
 
@@ -951,15 +962,6 @@ header .socials ul li a:hover {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  #projects #card {
-    -ms-grid-columns: 18rem;
-        grid-template-columns: 18rem;
-    -ms-grid-rows: 13rem 13rem 5rem;
-        grid-template-rows: 13rem 13rem 5rem;
-  }
-}
-
 .nav-active {
   z-index: 1000;
   -webkit-transform: translateX(0%);
@@ -968,8 +970,8 @@ header .socials ul li a:hover {
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+          transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .toggle .line2 {
@@ -977,8 +979,8 @@ header .socials ul li a:hover {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+          transform: rotate(45deg) translate(-5px, -5px);
 }
 
 @-webkit-keyframes linkFade {
