@@ -48,7 +48,7 @@ body {
 
 //////////////////////////////////////// HEADER ////////////////////////////////////////
 header {
-  background: url(../images/space.jpg) center;
+  background: url(../images/stars.jpg) center;
   background-size: cover;
   min-height: 100vh;
   nav {
@@ -85,14 +85,13 @@ header {
         color: #fff;
         text-decoration: none;
         letter-spacing: 2px;
-        display: inline-block;
       }
       .link::after {
         content: "";
         position: relative;
         display: block;
         width: 0;
-        height: 5px;
+        height: 4px;
         background: var(--red);
         transition: width 0.3s ease;
       }
@@ -167,7 +166,7 @@ header {
     }
     p {
       font-family: var(--raleway);
-      color: rgb(170, 170, 170);
+      color: rgb(219, 219, 219);
       line-height: 1.6;
       font-size: calc(14px + 0.5vw);
       text-align: center;
