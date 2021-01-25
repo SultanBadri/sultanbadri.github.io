@@ -786,6 +786,9 @@ header .socials ul li a:hover {
   #about #about-me h2 {
     font-size: 1.5rem;
   }
+  #about #about-me p {
+    font-size: 0.7rem;
+  }
   #skills #header h2 {
     font-size: 1.5rem;
   }
@@ -833,7 +836,7 @@ header .socials ul li a:hover {
     font-size: 1.8rem;
   }
   #about .container-about .about-me p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     min-width: 70%;
   }
   #skills .header h2 {
