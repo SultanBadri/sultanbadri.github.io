@@ -8,6 +8,28 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
+    <meta
+      name="keyword"
+      content="Sultan Badri, portfolio, javascript, student, developer"
+    />
+    <meta
+      name="description"
+      content="Undergraduate student studying computer science at UC Berkeley and aspiring web developer."
+    />
+    <meta property="og:title" content="Sultan Badri | Student and Developer" />
+    <meta
+      property="og:description"
+      content="Undergraduate student studying computer science at UC Berkeley and aspiring web developer."
+    />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/46205282?s=400&u=e45c30c63d63d42eb50136cca684ba72bba1741b&v=4"
+    />
+    <meta
+      property="og:url"
+      content="https://sultanbadri.github.io/portfolio/"
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script
@@ -21,7 +43,7 @@
       src="https://code.iconify.design/1/1.0.7/iconify.min.js"
     ></script>
     <script defer src="script.js"></script>
-    <title>Sultan Badri | Portfolio</title>
+    <title>Sultan Badri</title>
   </head>
   <body>
     <!-- BACK TO TOP BUTTON -->
@@ -31,7 +53,7 @@
 
     <!-- HEADER -->
     <header id="home">
-      <nav id="nav">
+      <nav id="nav" aria-label="Main menu">
         <div class="logo">
           <h3>Sultan <span>Badri</span></h3>
         </div>
@@ -92,6 +114,8 @@
               href="https://www.linkedin.com/in/sultanbadri"
               target="_blank"
               class="linkedin"
+              aria-label="LinkedIn"
+              rel="noopener"
               >LinkedIn<i class="fi-snsuxl-linkedin"></i
             ></a>
           </li>
@@ -100,6 +124,8 @@
               href="https://github.com/SultanBadri"
               target="_blank"
               class="github"
+              aria-label="GitHub"
+              rel="noopener"
               >GitHub<i class="fi-snsuxl-github-alt"></i
             ></a>
           </li>
@@ -108,6 +134,8 @@
               href="mailto:sultanbadri@berkeley.edu"
               target="_blank"
               class="email"
+              aria-label="Email"
+              rel="noopener"
               >Email<i class="fi-xwsuxl-envelope-solid"></i
             ></a>
           </li>
@@ -203,6 +231,15 @@
           <p><i class="fas fa-book-reader"></i></p>
           <h3>Frameworks/Libraries</h3>
           <span
+            >React
+            <span
+              class="iconify"
+              data-icon="logos:react"
+              data-inline="false"
+            ></span
+          ></span>
+          <br />
+          <span
             >jQuery
             <span
               class="iconify"
@@ -212,10 +249,10 @@
           </span>
           <br />
           <span
-            >React
+            >Jest
             <span
               class="iconify"
-              data-icon="logos:react"
+              data-icon="logos:jest"
               data-inline="false"
             ></span
           ></span>
@@ -657,7 +694,11 @@
 
     <footer id="contact">
       <span>Email: </span
-      ><a class="email" href="mailto:sultanbadri@berkeley.edu"
+      ><a
+        class="email"
+        href="mailto:sultanbadri@berkeley.edu"
+        aria-label="Email"
+        rel="noopener"
         >sultanbadri@berkeley.edu</a
       >
     </footer>
