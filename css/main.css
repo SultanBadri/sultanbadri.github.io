@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 :root {
-  --red: #ff4d5a;
+  --red: #e44e58;
   --dark-red: #e43956c4;
   --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
   --dark-blue: #002333;
   --text-color: #fff;
+  --lighter-text: rgb(219, 219, 219);
   --card-background: #2e3031;
   --skills-span: rgb(200, 200, 200);
 }
@@ -17,6 +18,7 @@
   --gray: rgb(107, 107, 107);
   --dark-gray: white;
   --text-color: #000;
+  --lighter-text: rgb(37, 37, 37);
   --card-background: #eeeeee;
   --skills-span: rgb(61, 61, 61);
 }
@@ -74,7 +76,7 @@ header nav {
 }
 
 header nav .logo {
-  color: #fff;
+  color: var(--text-color);
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -103,7 +105,7 @@ header nav .links li {
 }
 
 header nav .links a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   letter-spacing: 2px;
 }
@@ -162,8 +164,22 @@ header .color-toggle {
   transition: all 0.2s ease;
 }
 
-header .color-toggle::before {
+header .color-toggle-label::before {
+  content: "🌚";
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0.2rem;
+  z-index: 1000;
+  font-size: 0.9rem;
+}
+
+header .color-toggle-label::after {
   content: "🌞";
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.2rem;
+  z-index: 1000;
+  font-size: 0.9rem;
 }
 
 header #color-toggle-input {
@@ -186,7 +202,7 @@ header .hero {
 
 header .hero h1,
 header .hero p {
-  color: #fff;
+  color: var(--text-color);
 }
 
 header .hero h1 {
@@ -200,7 +216,7 @@ header .hero h1 span {
 }
 
 header .hero p {
-  color: #dbdbdb;
+  color: var(--lighter-text);
   line-height: 1.6;
   font-size: calc(14px + 0.5vw);
   text-align: center;
@@ -228,12 +244,13 @@ header .hero .hero-btns a {
 }
 
 header .hero .hero-btns .about {
-  color: #fff;
+  color: var(--text-color);
   border: 2px solid var(--red);
 }
 
 header .hero .hero-btns .about:hover {
   background: var(--red);
+  color: #fff;
 }
 
 header .hero .hero-btns .projects-btn {
@@ -455,7 +472,7 @@ header .socials ul li a:hover {
 }
 
 #skills .container div h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--text-color);
   padding-bottom: 1rem;
 }
@@ -972,8 +989,8 @@ header .socials ul li a:hover {
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-          transform: rotate(-45deg) translate(-5px, 5px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -981,8 +998,8 @@ header .socials ul li a:hover {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-          transform: rotate(45deg) translate(-5px, -5px);
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @-webkit-keyframes linkFade {
