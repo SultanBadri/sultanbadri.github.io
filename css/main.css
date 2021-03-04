@@ -208,7 +208,7 @@ header .hero p {
 header .hero h1 {
   white-space: nowrap;
   text-align: center;
-  font-size: calc(1.5rem + 3.2vw);
+  font-size: calc(1.2rem + 3.2vw);
 }
 
 header .hero h1 span {
