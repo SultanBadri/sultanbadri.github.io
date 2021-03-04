@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 :root {
-  --red: #e43956c4;
+  --red: #ff4d5a;
+  --dark-red: #e43956c4;
   --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
   --dark-blue: #002333;
   --text-color: #fff;
   --card-background: #2e3031;
-  --skills-span: #b1b1b1;
-  --open-sans: "Open Sans", sans-serif;
-  --raleway: "Raleway", sans-serif;
+  --skills-span: rgb(200, 200, 200);
 }
 
 .light-mode {
@@ -42,6 +42,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
 }
 
 header {
-  background: url(../images/stars.jpg) center;
+  background: var(--dark-gray);
   background-size: cover;
   min-height: 100vh;
 }
@@ -67,7 +68,6 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: var(--raleway);
   min-height: 6vh;
   -webkit-animation: nav-links 0.5s;
           animation: nav-links 0.5s;
@@ -83,7 +83,7 @@ header nav .logo {
 }
 
 header nav .logo span {
-  color: var(--red);
+  color: var(--dark-red);
 }
 
 header nav .links {
@@ -114,7 +114,7 @@ header nav .links .link::after {
   display: block;
   width: 0;
   height: 4px;
-  background: var(--red);
+  background: var(--dark-red);
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
@@ -162,6 +162,10 @@ header .color-toggle {
   transition: all 0.2s ease;
 }
 
+header .color-toggle::before {
+  content: "🌞";
+}
+
 header #color-toggle-input {
   display: none;
 }
@@ -189,7 +193,6 @@ header .hero h1 {
   white-space: nowrap;
   text-align: center;
   font-size: calc(1.5rem + 3.2vw);
-  font-family: var(--open-sans);
 }
 
 header .hero h1 span {
@@ -197,7 +200,6 @@ header .hero h1 span {
 }
 
 header .hero p {
-  font-family: var(--raleway);
   color: #dbdbdb;
   line-height: 1.6;
   font-size: calc(14px + 0.5vw);
@@ -215,7 +217,6 @@ header .hero .hero-btns {
 header .hero .hero-btns a {
   margin: 1rem 0.5rem;
   display: inline-block;
-  font-family: var(--open-sans);
   text-decoration: none;
   padding: 10px 32px;
   border-radius: 25px;
@@ -262,7 +263,6 @@ header .socials ul {
 header .socials ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: var(--raleway);
   font-size: 1.2rem;
   padding: 1.2rem;
   display: block;
@@ -299,15 +299,17 @@ header .socials ul li a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--red);
+  background: var(--dark-red);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 #home .fixed .logo {
-  color: var(--text-color);
+  color: #fff;
 }
 
 #home .fixed .logo span {
@@ -336,7 +338,6 @@ header .socials ul li a:hover {
 #about .container-about .about-me h2 {
   font-size: 2.5rem;
   position: relative;
-  font-family: var(--open-sans);
   color: #fff;
   letter-spacing: 2px;
   padding-top: 5rem;
@@ -359,13 +360,13 @@ header .socials ul li a:hover {
 }
 
 #about .container-about .about-me p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 auto;
   padding: 2rem 0 5rem 0;
   max-width: 67%;
-  color: #aaaaaa;
+  color: #c8c8c8;
+  font-weight: bolder;
   line-height: 1.7;
-  font-family: var(--open-sans);
   text-align: justify;
 }
 
@@ -403,11 +404,10 @@ header .socials ul li a:hover {
   font-size: 2.5rem;
   position: relative;
   color: var(--text-color);
-  font-family: var(--open-sans);
   text-transform: capitalize;
   letter-spacing: 2px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 #skills .header h2 span {
@@ -444,7 +444,6 @@ header .socials ul li a:hover {
   padding: 1rem;
   margin: 1.5rem;
   text-align: center;
-  font-family: var(--open-sans);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -490,7 +489,6 @@ header .socials ul li a:hover {
   font-size: 2.5rem;
   position: relative;
   color: #fff;
-  font-family: var(--open-sans);
   text-transform: capitalize;
   letter-spacing: 2px;
   width: 80%;
@@ -557,20 +555,17 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card .card-text h2 {
-  font-family: var(--open-sans);
   padding: 0.5rem 0 1rem 0;
   color: var(--text-color);
 }
 
 #projects .container .card .card-text p {
   color: var(--gray);
-  font-family: var(--raleway);
   line-height: 1.6;
 }
 
 #projects .container .card .card-text .made-with {
   color: var(--gray);
-  font-family: var(--raleway);
   line-height: 1.6;
   font-weight: bold;
 }
@@ -587,7 +582,6 @@ header .socials ul li a:hover {
   padding: 8px 24px;
   outline: none;
   border: none;
-  font-family: var(--raleway);
   color: var(--text-color);
   background: var(--red);
   border-radius: 25px;
@@ -666,7 +660,6 @@ header .socials ul li a:hover {
 #contact span,
 #contact .email {
   color: var(--gray);
-  font-family: var(--raleway);
   font-size: calc(1rem + 0.2vw);
   text-decoration: none;
   font-weight: bold;
@@ -702,7 +695,7 @@ header .socials ul li a:hover {
 #back-to-top:hover,
 #back-to-top:focus {
   background-color: var(--text-color);
-  color: var(--red);
+  color: var(--dark-red);
 }
 
 .btn-entrance {
@@ -772,6 +765,9 @@ header .socials ul li a:hover {
 }
 
 @media screen and (max-width: 360px) {
+  #home .hero h1 {
+    font-size: 1.8rem;
+  }
   #home .hero .student {
     font-size: 0.6rem;
   }
@@ -854,7 +850,7 @@ header .socials ul li a:hover {
     font-size: 2.5rem;
   }
   #skills .container div h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #skills .container div span {
     font-size: 0.8rem;

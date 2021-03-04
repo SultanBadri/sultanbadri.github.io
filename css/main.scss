@@ -1,18 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 //////////////////////////////////////// VARIABLES ////////////////////////////////////////
 :root {
-  --red: #e43956c4;
+  --red: #ff4d5a;
+  --dark-red: #e43956c4;
   --blue: #0077b5;
   --gray: rgb(170, 170, 170);
   --dark-gray: #181a1b;
   --dark-blue: #002333;
   --text-color: #fff;
   --card-background: #2e3031;
-  --skills-span: #b1b1b1;
-  --open-sans: "Open Sans", sans-serif;
-  --raleway: "Raleway", sans-serif;
+  --skills-span: rgb(200, 200, 200);
 }
 
 .light-mode {
@@ -39,6 +38,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 
 //////////////////////////////////////// HEADER ////////////////////////////////////////
 header {
-  background: url(../images/stars.jpg) center;
+  background: var(--dark-gray);
   background-size: cover;
   min-height: 100vh;
   nav {
@@ -58,7 +58,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: var(--raleway);
     min-height: 6vh;
     animation: nav-links 0.5s;
     .logo {
@@ -68,7 +67,7 @@ header {
       letter-spacing: 5px;
       transition: 0.3s ease;
       span {
-        color: var(--red);
+        color: var(--dark-red);
       }
     }
     .links {
@@ -92,7 +91,7 @@ header {
         display: block;
         width: 0;
         height: 4px;
-        background: var(--red);
+        background: var(--dark-red);
         transition: width 0.3s ease;
       }
       .link:hover::after {
@@ -136,6 +135,10 @@ header {
     transition: all 0.2s ease;
   }
 
+  .color-toggle::before {
+    content: "🌞";
+  }
+
   #color-toggle-input {
     display: none;
   }
@@ -159,13 +162,11 @@ header {
       white-space: nowrap;
       text-align: center;
       font-size: calc(1.5rem + 3.2vw);
-      font-family: var(--open-sans);
       span {
         color: var(--red);
       }
     }
     p {
-      font-family: var(--raleway);
       color: rgb(219, 219, 219);
       line-height: 1.6;
       font-size: calc(14px + 0.5vw);
@@ -180,7 +181,6 @@ header {
       a {
         margin: 1rem 0.5rem;
         display: inline-block;
-        font-family: var(--open-sans);
         text-decoration: none;
         padding: 10px 32px;
         border-radius: 25px;
@@ -221,7 +221,6 @@ header {
         a {
           text-decoration: none;
           color: #fff;
-          font-family: var(--raleway);
           font-size: 1.2rem;
           padding: 1.2rem;
           display: block;
@@ -255,11 +254,12 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--red);
+  background: var(--dark-red);
   transition: 0.3s ease;
   backdrop-filter: blur(8px);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   .logo {
-    color: var(--text-color);
+    color: #fff;
     span {
       color: var(--text-color);
     }
@@ -282,7 +282,6 @@ header {
       h2 {
         font-size: 2.5rem;
         position: relative;
-        font-family: var(--open-sans);
         color: #fff;
         letter-spacing: 2px;
         padding-top: 5rem;
@@ -302,13 +301,13 @@ header {
         background: var(--red);
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0 auto;
         padding: 2rem 0 5rem 0;
         max-width: 67%;
-        color: rgb(170, 170, 170);
+        color: rgb(200, 200, 200);
+        font-weight: bolder;
         line-height: 1.7;
-        font-family: var(--open-sans);
         text-align: justify;
       }
     }
@@ -335,11 +334,10 @@ header {
       font-size: 2.5rem;
       position: relative;
       color: var(--text-color);
-      font-family: var(--open-sans);
       text-transform: capitalize;
       letter-spacing: 2px;
       width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 1rem auto;
       span {
         color: var(--red);
       }
@@ -367,7 +365,6 @@ header {
       padding: 1rem;
       margin: 1.5rem;
       text-align: center;
-      font-family: var(--open-sans);
       transition: 0.5s ease;
       p {
         font-size: 4rem;
@@ -404,7 +401,6 @@ header {
       font-size: 2.5rem;
       position: relative;
       color: #fff;
-      font-family: var(--open-sans);
       text-transform: capitalize;
       letter-spacing: 2px;
       width: 80%;
@@ -449,18 +445,15 @@ header {
         grid-area: text;
         padding: 1.5rem;
         h2 {
-          font-family: var(--open-sans);
           padding: 0.5rem 0 1rem 0;
           color: var(--text-color);
         }
         p {
           color: var(--gray);
-          font-family: var(--raleway);
           line-height: 1.6;
         }
         .made-with {
           color: var(--gray);
-          font-family: var(--raleway);
           line-height: 1.6;
           font-weight: bold;
         }
@@ -473,7 +466,6 @@ header {
           padding: 8px 24px;
           outline: none;
           border: none;
-          font-family: var(--raleway);
           color: var(--text-color);
           background: var(--red);
           border-radius: 25px;
@@ -540,7 +532,6 @@ header {
   span,
   .email {
     color: var(--gray);
-    font-family: var(--raleway);
     font-size: calc(1rem + 0.2vw);
     text-decoration: none;
     font-weight: bold;
@@ -574,7 +565,7 @@ header {
 #back-to-top:hover,
 #back-to-top:focus {
   background-color: var(--text-color);
-  color: var(--red);
+  color: var(--dark-red);
 }
 
 .btn-entrance {
@@ -614,6 +605,9 @@ header {
 @media screen and (max-width: 360px) {
   #home {
     .hero {
+      h1 {
+        font-size: 1.8rem;
+      }
       .student {
         font-size: 0.6rem;
       }
@@ -741,7 +735,7 @@ header {
           font-size: 2.5rem;
         }
         h3 {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
         span {
           font-size: 0.8rem;
