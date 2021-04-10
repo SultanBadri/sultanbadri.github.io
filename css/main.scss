@@ -291,7 +291,6 @@ header {
 
 //////////////////////////////////////// ABOUT SECTION ////////////////////////////////////////
 #about {
-  padding: 2rem 0;
   background: var(--dark-blue);
   .container-about {
     display: flex;
@@ -346,7 +345,7 @@ header {
 //////////////////////////////////////// SKILLS ////////////////////////////////////////
 #skills {
   background: var(--dark-gray);
-  padding: 7rem 0;
+  padding: 5rem 0;
   .header {
     h2 {
       font-size: 2.5rem;
@@ -413,8 +412,8 @@ header {
 //////////////////////////////////////// FEATURED PROJECTS ////////////////////////////////////////
 #projects {
   background: var(--dark-blue);
+  padding: 5rem 0;
   .header {
-    padding-top: 7rem;
     h2 {
       font-size: 2.5rem;
       position: relative;
@@ -422,7 +421,7 @@ header {
       text-transform: capitalize;
       letter-spacing: 2px;
       width: 80%;
-      margin: 0 auto;
+      margin: 0 auto 1rem auto;
       span {
         color: var(--red);
       }
@@ -451,7 +450,7 @@ header {
       border-radius: 19px;
       background: var(--dark-gray);
       text-align: center;
-      margin: 4rem 2rem 4rem 2rem;
+      margin: 2rem;
       transition: 0.3s ease;
       .card-img {
         grid-area: image;
@@ -641,8 +640,8 @@ header {
       h1 {
         font-size: 1.8rem;
       }
-      .student {
-        font-size: 0.6rem;
+      #student {
+        font-size: 0.7rem;
       }
       .hero-btns {
         #about-btn,
@@ -700,17 +699,18 @@ header {
     .container {
       #card {
         grid-template-columns: 15rem;
-        grid-template-rows: 10rem 13rem 3rem;
+        grid-template-rows: 10rem 12rem 3rem;
         .card-text {
           h2 {
-            font-size: 1.2rem;
+            font-size: 1rem;
           }
           p {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
           }
         }
         .card-buttons {
           font-size: 0.7rem;
+          padding: 2px 8px;
         }
       }
     }
@@ -738,6 +738,9 @@ header {
       font-size: 0.9rem;
     }
     .hero {
+      .student {
+        font-size: 0.85rem;
+      }
       .hero-btns {
         .about,
         .projects-btn {
@@ -799,8 +802,23 @@ header {
     .container {
       width: 100%;
       .card {
-        grid-template-columns: 18rem;
-        grid-template-rows: 13rem 15rem 4rem;
+        grid-template-columns: 17rem;
+        grid-template-rows: 12rem 13rem 3rem;
+        .card-text {
+          h2 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        .made-with {
+          line-height: 1;
+        }
+        .card-buttons {
+          font-size: 0.8rem;
+          padding: 4px 16px;
+        }
       }
     }
   }
@@ -835,6 +853,46 @@ header {
     display: block !important;
   }
 
+  #about .container-about {
+    flex-direction: column;
+    .about-me {
+      width: 100%;
+      h2 {
+        width: 70%;
+      }
+      h2::after {
+        width: 20%;
+      }
+      p {
+        width: 55%;
+      }
+    }
+    .student-img {
+      width: 100%;
+      padding: 0 0 5rem 0;
+      img {
+        width: 40%;
+        height: 40%;
+      }
+    }
+  }
+
+  #skills {
+    .header {
+      h2 {
+        width: 70%;
+      }
+    }
+  }
+
+  #projects {
+    .header {
+      h2 {
+        width: 70%;
+      }
+    }
+  }
+
   #back-to-top {
     bottom: 6%;
     right: 5%;
@@ -845,49 +903,6 @@ header {
 }
 
 //////////////////////////////////////// LARGE DEVICES ////////////////////////////////////////
-// @media screen and (max-width: 1024px) {
-//   #about .container-about {
-//     flex-direction: column;
-//     .about-me {
-//       width: 100%;
-//       h2 {
-//         width: 50%;
-//       }
-//       h2::after {
-//         width: 20%;
-//       }
-//       p {
-//         width: 50%;
-//       }
-//     }
-//     .student-img {
-//       width: 100%;
-//       padding: 0 0 5rem 0;
-//       img {
-//         width: 40%;
-//         height: 40%;
-//       }
-//     }
-//   }
-
-//   #skills {
-//     .header {
-//       h2 {
-//         width: 50%;
-//       }
-//     }
-//   }
-
-//   #projects {
-//     .header {
-//       h2 {
-//         width: 50%;
-//       }
-//     }
-//   }
-// }
-
-//////////////////////////////////////// LARGER DEVICES ////////////////////////////////////////
 @media screen and (max-width: 1260px) {
   #skills {
     .container {

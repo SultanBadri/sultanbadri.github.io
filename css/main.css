@@ -340,7 +340,6 @@ header .socials ul li a:hover {
 }
 
 #about {
-  padding: 2rem 0;
   background: var(--dark-blue);
 }
 
@@ -416,7 +415,7 @@ header .socials ul li a:hover {
 
 #skills {
   background: var(--dark-gray);
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 #skills .header h2 {
@@ -498,10 +497,7 @@ header .socials ul li a:hover {
 
 #projects {
   background: var(--dark-blue);
-}
-
-#projects .header {
-  padding-top: 7rem;
+  padding: 5rem 0;
 }
 
 #projects .header h2 {
@@ -511,7 +507,7 @@ header .socials ul li a:hover {
   text-transform: capitalize;
   letter-spacing: 2px;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
 }
 
 #projects .header h2 span {
@@ -552,7 +548,7 @@ header .socials ul li a:hover {
   border-radius: 19px;
   background: var(--dark-gray);
   text-align: center;
-  margin: 4rem 2rem 4rem 2rem;
+  margin: 2rem;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
@@ -807,8 +803,8 @@ header .socials ul li a:hover {
   #home .hero h1 {
     font-size: 1.8rem;
   }
-  #home .hero .student {
-    font-size: 0.6rem;
+  #home .hero #student {
+    font-size: 0.7rem;
   }
   #home .hero .hero-btns #about-btn,
   #home .hero .hero-btns #projects-btn {
@@ -841,17 +837,18 @@ header .socials ul li a:hover {
   #projects .container #card {
     -ms-grid-columns: 15rem;
         grid-template-columns: 15rem;
-    -ms-grid-rows: 10rem 13rem 3rem;
-        grid-template-rows: 10rem 13rem 3rem;
+    -ms-grid-rows: 10rem 12rem 3rem;
+        grid-template-rows: 10rem 12rem 3rem;
   }
   #projects .container #card .card-text h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #projects .container #card .card-text p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   #projects .container #card .card-buttons {
     font-size: 0.7rem;
+    padding: 2px 8px;
   }
   #resume h2 {
     font-size: 1.5rem;
@@ -869,6 +866,9 @@ header .socials ul li a:hover {
   }
   #home .logo {
     font-size: 0.9rem;
+  }
+  #home .hero .student {
+    font-size: 0.85rem;
   }
   #home .hero .hero-btns .about,
   #home .hero .hero-btns .projects-btn {
@@ -911,10 +911,23 @@ header .socials ul li a:hover {
     width: 100%;
   }
   #projects .container .card {
-    -ms-grid-columns: 18rem;
-        grid-template-columns: 18rem;
-    -ms-grid-rows: 13rem 15rem 4rem;
-        grid-template-rows: 13rem 15rem 4rem;
+    -ms-grid-columns: 17rem;
+        grid-template-columns: 17rem;
+    -ms-grid-rows: 12rem 13rem 3rem;
+        grid-template-rows: 12rem 13rem 3rem;
+  }
+  #projects .container .card .card-text h2 {
+    font-size: 1.2rem;
+  }
+  #projects .container .card .card-text p {
+    font-size: 0.8rem;
+  }
+  #projects .container .card .made-with {
+    line-height: 1;
+  }
+  #projects .container .card .card-buttons {
+    font-size: 0.8rem;
+    padding: 4px 16px;
   }
 }
 
@@ -950,6 +963,38 @@ header .socials ul li a:hover {
   }
   .hamburger-menu {
     display: block !important;
+  }
+  #about .container-about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about .container-about .about-me {
+    width: 100%;
+  }
+  #about .container-about .about-me h2 {
+    width: 70%;
+  }
+  #about .container-about .about-me h2::after {
+    width: 20%;
+  }
+  #about .container-about .about-me p {
+    width: 55%;
+  }
+  #about .container-about .student-img {
+    width: 100%;
+    padding: 0 0 5rem 0;
+  }
+  #about .container-about .student-img img {
+    width: 40%;
+    height: 40%;
+  }
+  #skills .header h2 {
+    width: 70%;
+  }
+  #projects .header h2 {
+    width: 70%;
   }
   #back-to-top {
     bottom: 6%;
