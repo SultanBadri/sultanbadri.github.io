@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sultanbadri.github.io
+Token: c3aad56820f9090ec30d4f43182b4bd9718858c9e7c20d93a58827cdab30c874
