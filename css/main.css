@@ -655,6 +655,10 @@ header .socials ul li a:hover {
   background: url(../images/messageboard.png) center;
 }
 
+#projects .container .card11 {
+  background: url(../images/messageboard.png) center;
+}
+
 .reveal {
   position: relative;
   -webkit-transform: translateY(5rem);
