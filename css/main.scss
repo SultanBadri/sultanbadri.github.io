@@ -375,6 +375,14 @@ header {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    .frameworks {
+      h3 {
+        font-size: 0.9rem;
+      }
+      span {
+        font-size: 0.9rem;
+      }
+    }
     div {
       background: var(--card-background);
       height: 22rem;
@@ -530,6 +538,10 @@ header {
     }
     .card11 {
       background: url(../images/inventory-application.png) center;
+    }
+
+    .card12 {
+      background: url(../images/);
     }
   }
 }
@@ -776,6 +788,11 @@ header {
       }
     }
     .container {
+      .frameworks {
+        h3 {
+          font-size: 0.75rem;
+        }
+      }
       div {
         height: 20rem;
         width: 16rem;

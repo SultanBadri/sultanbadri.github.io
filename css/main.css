@@ -455,6 +455,14 @@ header .socials ul li a:hover {
   margin: 0 auto;
 }
 
+#skills .container .frameworks h3 {
+  font-size: 0.9rem;
+}
+
+#skills .container .frameworks span {
+  font-size: 0.9rem;
+}
+
 #skills .container div {
   background: var(--card-background);
   height: 22rem;
@@ -657,6 +665,10 @@ header .socials ul li a:hover {
 
 #projects .container .card11 {
   background: url(../images/inventory-application.png) center;
+}
+
+#projects .container .card12 {
+  background: url(../images/);
 }
 
 .reveal {
@@ -891,6 +903,9 @@ header .socials ul li a:hover {
   }
   #skills .header h2 {
     font-size: 1.8rem;
+  }
+  #skills .container .frameworks h3 {
+    font-size: 0.75rem;
   }
   #skills .container div {
     height: 20rem;
