@@ -455,6 +455,10 @@ header .socials ul li a:hover {
   margin: 0 auto;
 }
 
+#skills .container .languages span {
+  font-size: 0.9rem;
+}
+
 #skills .container .frameworks h3 {
   font-size: 0.9rem;
 }
@@ -481,7 +485,6 @@ header .socials ul li a:hover {
 }
 
 #skills .container div h3 {
-  font-size: 1.4rem;
   color: var(--text-color);
   padding-bottom: 1rem;
 }

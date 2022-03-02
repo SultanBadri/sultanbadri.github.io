@@ -375,6 +375,11 @@ header {
     flex-wrap: wrap;
     width: 80%;
     margin: 0 auto;
+    .languages {
+      span {
+        font-size: 0.9rem;
+      }
+    }
     .frameworks {
       h3 {
         font-size: 0.9rem;
@@ -397,7 +402,6 @@ header {
         color: var(--red);
       }
       h3 {
-        font-size: 1.4rem;
         color: var(--text-color);
         padding-bottom: 1rem;
       }
