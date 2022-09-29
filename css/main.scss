@@ -137,24 +137,6 @@ header {
     transition: all 0.2s ease;
   }
 
-  .color-toggle-label::before {
-    content: "🌚";
-    position: absolute;
-    bottom: 0.25rem;
-    left: 0.2rem;
-    z-index: 1000;
-    font-size: 0.9rem;
-  }
-
-  .color-toggle-label::after {
-    content: "🌞";
-    position: absolute;
-    bottom: 0.25rem;
-    right: 0.2rem;
-    z-index: 1000;
-    font-size: 0.9rem;
-  }
-
   #color-toggle-input {
     display: none;
   }
@@ -325,7 +307,6 @@ header {
         color: rgb(200, 200, 200);
         font-weight: bolder;
         line-height: 1.7;
-        text-align: justify;
       }
     }
     .student-img {
@@ -511,41 +492,43 @@ header {
       }
     }
     .card1 {
-      background: url(../images/shopping_cart.png) center;
+      background: url(../images/shopping-cart.png);
     }
     .card2 {
-      background: url(../images/memory_cards.png) center;
+      background: url(../images/memory-cards.png);
     }
     .card3 {
-      background: url(../images/cv.png) center;
+      background: url(../images/cv.png);
     }
     .card4 {
-      background: url(../images/weather_app.png) center;
+      background: url(../images/weather-app.png);
     }
     .card5 {
-      background: url(../images/portfolio.png) center;
+      background: url(../images/portfolio.png);
     }
     .card6 {
-      background: url(../images/todo_list.png) center;
+      background: url(../images/todo-list.png);
     }
     .card7 {
-      background: url(../images/tic_tac_toe.png) center;
+      background: url(../images/tic-tac-toe.png);
     }
     .card8 {
-      background: url(../images/restaurant.png) center;
+      background: url(../images/restaurant.png);
     }
     .card9 {
-      background: url(../images/library.png) center;
+      background: url(../images/library.png);
     }
     .card10 {
-      background: url(../images/messageboard.png) center;
+      background: url(../images/messageboard.png);
     }
     .card11 {
-      background: url(../images/inventory-application.png) center;
+      background: url(../images/inventory-application.png);
     }
-
     .card12 {
-      background: url(../images/members_only.png);
+      background: url(../images/members-only.png);
+    }
+    .card13 {
+      background: url(../images/mern-blog.png);
     }
   }
 }

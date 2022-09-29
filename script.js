@@ -3,7 +3,7 @@ const colorToggle = document.getElementById("color-toggle-input");
 
 // Typing effect with typed.js
 const typed = new Typed(".animate", {
-  strings: ["student.", "coder.", "PC gamer.", "MMA fan."],
+  strings: ["student.", "coder.", "language learner.", "MMA fan."],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true,
@@ -38,10 +38,9 @@ function navSlider() {
     nav.classList.toggle("nav-active");
 
     links.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `linkFade 0.5s ease forwards ${
+      if (link.style.animation) link.style.animation = "";
+      else {
+        link.style.animation = `linkFade 0.4s ease forwards ${
           index / 7 + 0.5
         }s`;
       }
@@ -79,11 +78,8 @@ function backToTop() {
 
 // Toggle dark mode
 function checkMode() {
-  if (colorToggle.checked) {
-    darkModeOn();
-  } else {
-    darkModeOff();
-  }
+  if (colorToggle.checked) darkModeOn();
+  else darkModeOff();
 }
 
 function darkModeOn() {

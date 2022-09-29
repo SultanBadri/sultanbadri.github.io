@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 :root {
@@ -162,24 +161,6 @@ header .color-toggle {
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-}
-
-header .color-toggle-label::before {
-  content: "🌚";
-  position: absolute;
-  bottom: 0.25rem;
-  left: 0.2rem;
-  z-index: 1000;
-  font-size: 0.9rem;
-}
-
-header .color-toggle-label::after {
-  content: "🌞";
-  position: absolute;
-  bottom: 0.25rem;
-  right: 0.2rem;
-  z-index: 1000;
-  font-size: 0.9rem;
 }
 
 header #color-toggle-input {
@@ -385,7 +366,6 @@ header .socials ul li a:hover {
   color: #c8c8c8;
   font-weight: bolder;
   line-height: 1.7;
-  text-align: justify;
 }
 
 #about .container-about .student-img {
@@ -627,51 +607,55 @@ header .socials ul li a:hover {
 }
 
 #projects .container .card1 {
-  background: url(../images/shopping_cart.png) center;
+  background: url(../images/shopping-cart.png);
 }
 
 #projects .container .card2 {
-  background: url(../images/memory_cards.png) center;
+  background: url(../images/memory-cards.png);
 }
 
 #projects .container .card3 {
-  background: url(../images/cv.png) center;
+  background: url(../images/cv.png);
 }
 
 #projects .container .card4 {
-  background: url(../images/weather_app.png) center;
+  background: url(../images/weather-app.png);
 }
 
 #projects .container .card5 {
-  background: url(../images/portfolio.png) center;
+  background: url(../images/portfolio.png);
 }
 
 #projects .container .card6 {
-  background: url(../images/todo_list.png) center;
+  background: url(../images/todo-list.png);
 }
 
 #projects .container .card7 {
-  background: url(../images/tic_tac_toe.png) center;
+  background: url(../images/tic-tac-toe.png);
 }
 
 #projects .container .card8 {
-  background: url(../images/restaurant.png) center;
+  background: url(../images/restaurant.png);
 }
 
 #projects .container .card9 {
-  background: url(../images/library.png) center;
+  background: url(../images/library.png);
 }
 
 #projects .container .card10 {
-  background: url(../images/messageboard.png) center;
+  background: url(../images/messageboard.png);
 }
 
 #projects .container .card11 {
-  background: url(../images/inventory-application.png) center;
+  background: url(../images/inventory-application.png);
 }
 
 #projects .container .card12 {
-  background: url(../images/members_only.png);
+  background: url(../images/members-only.png);
+}
+
+#projects .container .card13 {
+  background: url(../images/mern-blog.png);
 }
 
 .reveal {
