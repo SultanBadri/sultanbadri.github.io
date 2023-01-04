@@ -77,14 +77,13 @@ header nav {
 header nav .logo {
   color: var(--text-color);
   font-size: 1.4rem;
-  text-transform: uppercase;
   letter-spacing: 5px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 header nav .logo span {
-  color: var(--dark-red);
+  color: var(--red);
 }
 
 header nav .links {

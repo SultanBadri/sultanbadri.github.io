@@ -3,7 +3,7 @@ const colorToggle = document.getElementById("color-toggle-input");
 
 // Typing effect with typed.js
 const typed = new Typed(".animate", {
-  strings: ["student.", "coder.", "language learner.", "MMA fan."],
+  strings: ["student.", "coder.", "game lover.", "MMA fan."],
   typeSpeed: 100,
   backSpeed: 100,
   loop: true,
@@ -14,6 +14,31 @@ function stickyNav() {
   const nav = document.querySelector("nav");
   nav.classList.toggle("fixed", window.scrollY > 0);
 }
+
+// Lazy load background images
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyBackgrounds = [].slice.call(
+    document.querySelectorAll(".lazy-background")
+  );
+
+  if ("IntersectionObserver" in window) {
+    let lazyBackgroundObserver = new IntersectionObserver(function (
+      entries,
+      _
+    ) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          lazyBackgroundObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    lazyBackgrounds.forEach(function (lazyBackground) {
+      lazyBackgroundObserver.observe(lazyBackground);
+    });
+  }
+});
 
 // Reveal projects
 function revealProjects() {

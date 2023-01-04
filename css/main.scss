@@ -65,11 +65,10 @@ header {
     .logo {
       color: var(--text-color);
       font-size: 1.4rem;
-      text-transform: uppercase;
       letter-spacing: 5px;
       transition: 0.3s ease;
       span {
-        color: var(--dark-red);
+        color: var(--red);
       }
     }
     .links {

@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="shortcut icon" href="./images/favicon.ico" />
     <meta
@@ -30,6 +27,7 @@
       content="https://sultanbadri.github.io/portfolio/"
     />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script defer src="script.js"></script>
@@ -75,19 +73,15 @@
               ><i class="fab fa-codepen"></i> Projects</a
             >
           </li>
-          <!-- <li>
-            <a href="#resume" class="link"
-              ><i class="fas fa-briefcase"></i> Resume</a
-            >
-          </li> -->
-
-          <!-- DARK MODE TOGGLE -->
-          <div class="color-toggle-container">
-            <input type="checkbox" id="color-toggle-input" />
-            <label for="color-toggle-input" class="color-toggle-label">
-              <div class="color-toggle"></div>
-            </label>
-          </div>
+          <li>
+            <!-- DARK MODE TOGGLE -->
+            <div class="color-toggle-container">
+              <input type="checkbox" id="color-toggle-input" />
+              <label for="color-toggle-input" class="color-toggle-label">
+                <div class="color-toggle"></div>
+              </label>
+            </div>
+          </li>
         </ul>
 
         <div class="hamburger-menu" id="hamburger-menu">
@@ -148,788 +142,788 @@
       </div>
     </header>
 
-    <!-- ABOUT ME -->
-    <section id="about">
-      <div class="container-about">
-        <div class="about-me" id="about-me">
-          <h2><span>About</span> Me</h2>
-          <p>
-            I'm currently an undergraduate looking to improve my software and
-            web development knowledge. I study at UC Berkeley, and I'm majoring
-            in data science. My programming journey kickstarted when learning to
-            make a simple HTML website on Window's notepad program. The Odin
-            Project's Full Stack JavaScript Curriculum is just one of the ways
-            I'm learning to code now. Besides coding, I like to play board games
-            and video games, watch MMA, and learn Spanish.
-          </p>
+    <main>
+      <!-- ABOUT ME -->
+      <section id="about">
+        <div class="container-about">
+          <div class="about-me" id="about-me">
+            <h2><span>About</span> Me</h2>
+            <p>
+              I'm currently an undergraduate looking to improve my software and
+              web development knowledge. I study at UC Berkeley, and I'm
+              majoring in data science. My programming journey kickstarted when
+              learning to make a simple HTML website on Window's notepad
+              program. The Odin Project's Full Stack JavaScript Curriculum is
+              just one of the ways I'm learning to code now. Besides coding, I
+              like to play board games and video games, watch MMA, and learn
+              Spanish.
+            </p>
+          </div>
+          <div class="student-img">
+            <img
+              src="./images/hello.svg"
+              height="250px"
+              width="350px"
+              alt="guy with laptop on a desk"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <div class="student-img">
-          <img
-            src="./images/hello.svg"
-            height="250px"
-            width="350px"
-            alt="hello"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="header" id="header">
-        <h2>My <span>Skills</span></h2>
-      </div>
-
-      <div class="container" id="container">
-        <div class="languages">
-          <p><i class="fas fa-code"></i></p>
-          <h3>Languages</h3>
-          <span
-            >JS/TS
-            <span
-              class="iconify"
-              data-icon="logos:javascript"
-              data-inline="false"
-            ></span>
-            <span
-              class="iconify"
-              data-icon="logos-typescript-icon"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >Python
-            <span
-              class="iconify"
-              data-icon="logos:python"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span>Java <span class="iconify" data-icon="logos:java"></span></span>
-          <br />
-          <span
-            >SQL
-            <span class="iconify" data-icon="vscode-icons:file-type-sql"></span
-          ></span>
-          <br />
-          <span
-            >HTML
-            <span
-              class="iconify"
-              data-icon="logos:html-5"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >CSS/SASS
-            <span
-              class="iconify"
-              data-icon="logos:css-3"
-              data-inline="false"
-            ></span>
-            <span
-              class="iconify"
-              data-icon="logos:sass"
-              data-inline="false"
-            ></span
-          ></span>
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="header" id="header">
+          <h2>My <span>Skills</span></h2>
         </div>
 
-        <div class="frameworks">
-          <p><i class="fas fa-book-reader"></i></p>
-          <h3>Frameworks/Libraries/Databases</h3>
-          <span
-            >React.js
+        <div class="container lazy-background" id="container">
+          <div class="languages">
+            <p><i class="fas fa-code"></i></p>
+            <h3>Languages</h3>
             <span
-              class="iconify"
-              data-icon="logos:react"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >Node.js/Express.js
-            <span
-              class="iconify"
-              data-icon="logos:nodejs-icon"
-              data-inline="false"
-            ></span>
-            <span
-              class="iconify"
-              data-icon="simple-icons:express"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >MongoDB
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-mongo"
-            ></span
-          ></span>
-          <br />
-          <span
-            >Jest
-            <span
-              class="iconify"
-              data-icon="logos:jest"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >jQuery
-            <span
-              class="iconify"
-              data-icon="bx:bxl-jquery"
-              data-inline="false"
-            ></span>
-          </span>
-          <br />
-          <span
-            >Tailwind
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-tailwind"
-            ></span>
-          </span>
-        </div>
-
-        <div class="technologies">
-          <p><i class="fas fa-tools"></i></p>
-          <h3>Technologies</h3>
-          <span
-            >Git
-            <span
-              class="iconify"
-              data-icon="logos:git-icon"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span>
-            Webpack
-            <span
-              class="iconify"
-              data-icon="logos:webpack"
-              data-inline="false"
-            ></span
-          ></span>
-          <br />
-          <span
-            >Figma <span class="iconify" data-icon="logos:figma"></span
-          ></span>
-          <br />
-          <span
-            >Canva
-            <span
-              class="iconify"
-              data-icon="cib:canva"
-              style="color: #34cceb"
-            ></span
-          ></span>
-          <br />
-          <span
-            >Heroku
-            <span
-              class="iconify"
-              data-icon="bxl:heroku"
-              style="color: #ab34eb"
-            ></span
-          ></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECT SHOWCASE -->
-    <section id="projects">
-      <div class="header" id="header">
-        <h2>My <span>Projects</span></h2>
-      </div>
-
-      <div class="container reveal">
-        <div class="card" id="card">
-          <div class="card-img card13"></div>
-          <div class="card-text">
-            <h2>MERN Blog</h2>
-            <p>MERN stack blog open to everyone.</p>
-            <br />
-            <p class="made-with">
-              Made with:
+              >JS/TS
+              <span
+                class="iconify"
+                data-icon="logos:javascript"
+                data-inline="false"
+              ></span>
               <span
                 class="iconify"
                 data-icon="logos-typescript-icon"
                 data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:react"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:nodejs-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="simple-icons:express"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-mongo"
-              ></span>
-              <span class="iconify" data-icon="logos:passport"></span>
-            </p>
+              ></span
+            ></span>
             <br />
-            <p>June 2022</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://my-mern-blog1.herokuapp.com/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/MERN-blog/"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card12"></div>
-          <div class="card-text">
-            <h2>Members Only</h2>
-            <p>Node, Express, MongoDB, and Passport.JS auth application.</p>
-            <br />
-            <p class="made-with">
-              Made with:
+            <span
+              >Python
               <span
                 class="iconify"
-                data-icon="logos:nodejs-icon"
+                data-icon="logos:python"
                 data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="simple-icons:express"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-mongo"
-              ></span>
-              <span class="iconify" data-icon="logos:passport"></span>
-            </p>
+              ></span
+            ></span>
             <br />
-            <p>December 2021</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://members-only12.herokuapp.com/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/members-only"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card11"></div>
-          <div class="card-text">
-            <h2>Inventory App</h2>
-            <p>Node, Express, and MongoDB inventory application.</p>
+            <span
+              >Java <span class="iconify" data-icon="logos:java"></span
+            ></span>
             <br />
-            <p class="made-with">
-              Made with:
+            <span
+              >SQL
               <span
                 class="iconify"
-                data-icon="logos:nodejs-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="simple-icons:express"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="vscode-icons:file-type-mongo"
-              ></span>
-            </p>
+                data-icon="vscode-icons:file-type-sql"
+              ></span
+            ></span>
             <br />
-            <p>September 2021</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://whispering-island-03847.herokuapp.com/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/inventory-application"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card10"></div>
-          <div class="card-text">
-            <h2>Message Board</h2>
-            <p>Message board made with Node.js and Express.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos:nodejs-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="simple-icons:express"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>March 2021</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://powerful-bayou-68462.herokuapp.com/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/mini-message-board"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card1"></div>
-          <div class="card-text">
-            <h2>Shopping cart</h2>
-            <p>React shopping-cart made using React Router.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos-typescript-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:react"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:react-router"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>January 2021</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/shopping-cart/#/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/shopping-cart"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card2"></div>
-          <div class="card-text">
-            <h2>Memory Cards</h2>
-            <p>React memory card game with TF2 theme.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos-typescript-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:react"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>January 2021</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/memory-cards/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/memory-cards"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card3"></div>
-          <div class="card-text">
-            <h2>CV Application</h2>
-            <p>CV/resume built using React and TypeScript.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos-typescript-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:react"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>December 2020</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/cv-project/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/cv-project"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card4"></div>
-          <div class="card-text">
-            <h2>Weather App</h2>
-            <p>Weather app made using the OpenWeatherMap API.</p>
-            <br />
-            <p class="made-with">
-              Made with:
+            <span
+              >HTML
               <span
                 class="iconify"
                 data-icon="logos:html-5"
                 data-inline="false"
-              ></span>
+              ></span
+            ></span>
+            <br />
+            <span
+              >CSS/SASS
               <span
                 class="iconify"
                 data-icon="logos:css-3"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos-typescript-icon"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:webpack"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>November 2020</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/weather-app/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/weather-app"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-
-        <div class="card" id="card">
-          <div class="card-img card5"></div>
-          <div class="card-text">
-            <h2>Portfolio V. 1</h2>
-            <p>First attempt at making a web development portfolio.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos:html-5"
                 data-inline="false"
               ></span>
               <span
                 class="iconify"
                 data-icon="logos:sass"
                 data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>November 2020</p>
+              ></span
+            ></span>
           </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/sultanbadri.github.io"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
 
-        <div class="card" id="card">
-          <div class="card-img card6"></div>
-          <div class="card-text">
-            <h2>Todo List</h2>
-            <p>A todo list using using vanilla JavaScript.</p>
+          <div class="frameworks">
+            <p><i class="fas fa-book-reader"></i></p>
+            <h3>Frameworks/Libraries/Databases</h3>
+            <span
+              >React.js
+              <span
+                class="iconify"
+                data-icon="logos:react"
+                data-inline="false"
+              ></span
+            ></span>
             <br />
-            <p class="made-with">
-              Made with:
+            <span
+              >Node.js/Express.js
               <span
                 class="iconify"
-                data-icon="logos:html-5"
+                data-icon="logos:nodejs-icon"
                 data-inline="false"
               ></span>
               <span
                 class="iconify"
-                data-icon="logos:css-3"
+                data-icon="simple-icons:express"
                 data-inline="false"
-              ></span>
+              ></span
+            ></span>
+            <br />
+            <span
+              >MongoDB
               <span
                 class="iconify"
-                data-icon="logos:javascript"
+                data-icon="vscode-icons:file-type-mongo"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Jest
+              <span
+                class="iconify"
+                data-icon="logos:jest"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span
+              >jQuery
+              <span
+                class="iconify"
+                data-icon="bx:bxl-jquery"
                 data-inline="false"
               ></span>
+            </span>
+            <br />
+            <span
+              >Tailwind
+              <span
+                class="iconify"
+                data-icon="vscode-icons:file-type-tailwind"
+              ></span>
+            </span>
+          </div>
+
+          <div class="technologies">
+            <p><i class="fas fa-tools"></i></p>
+            <h3>Technologies</h3>
+            <span
+              >Git
+              <span
+                class="iconify"
+                data-icon="logos:git-icon"
+                data-inline="false"
+              ></span
+            ></span>
+            <br />
+            <span>
+              Webpack
               <span
                 class="iconify"
                 data-icon="logos:webpack"
                 data-inline="false"
-              ></span>
-            </p>
+              ></span
+            ></span>
             <br />
-            <p>November 2020</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/todo-list/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/todo-list"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
+            <span
+              >Figma <span class="iconify" data-icon="logos:figma"></span
+            ></span>
+            <br />
+            <span
+              >Canva
+              <span
+                class="iconify"
+                data-icon="cib:canva"
+                style="color: #34cceb"
+              ></span
+            ></span>
+            <br />
+            <span
+              >Heroku
+              <span
+                class="iconify"
+                data-icon="bxl:heroku"
+                style="color: #ab34eb"
+              ></span
+            ></span>
           </div>
         </div>
+      </section>
 
-        <div class="card" id="card">
-          <div class="card-img card7"></div>
-          <div class="card-text">
-            <h2>Tic Tac Toe</h2>
-            <p>Tic Tac Toe with single player and two player modes.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos:html-5"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:css-3"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>October 2020</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/tic-tac-toe/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/tic-tac-toe"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
+      <!-- PROJECT SHOWCASE -->
+      <section id="projects">
+        <div class="header" id="header">
+          <h2>My <span>Projects</span></h2>
         </div>
 
-        <div class="card" id="card">
-          <div class="card-img card8"></div>
-          <div class="card-text">
-            <h2>Restaurant Page</h2>
-            <p>Dynamically rendered restaurant page with JS.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos:html-5"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:css-3"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:webpack"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>October 2020</p>
+        <div class="container reveal lazy-background">
+          <div class="card lazy-background" id="card">
+            <div class="card-img card13"></div>
+            <div class="card-text">
+              <h2>MERN Blog</h2>
+              <p>MERN stack blog open to everyone.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos-typescript-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:react"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:nodejs-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="simple-icons:express"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="vscode-icons:file-type-mongo"
+                ></span>
+                <span class="iconify" data-icon="logos:passport"></span>
+              </p>
+              <br />
+              <p>June 2022</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://my-mern-blog1.herokuapp.com/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/MERN-blog/"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
           </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/restaurant-page/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/restaurant-page"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card12"></div>
+            <div class="card-text">
+              <h2>Members Only</h2>
+              <p>Node, Express, MongoDB, and Passport.JS auth application.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:nodejs-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="simple-icons:express"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="vscode-icons:file-type-mongo"
+                ></span>
+                <span class="iconify" data-icon="logos:passport"></span>
+              </p>
+              <br />
+              <p>December 2021</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://members-only12.herokuapp.com/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/members-only"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card11"></div>
+            <div class="card-text">
+              <h2>Inventory App</h2>
+              <p>Node, Express, and MongoDB inventory application.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:nodejs-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="simple-icons:express"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="vscode-icons:file-type-mongo"
+                ></span>
+              </p>
+              <br />
+              <p>September 2021</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://whispering-island-03847.herokuapp.com/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/inventory-application"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card10"></div>
+            <div class="card-text">
+              <h2>Message Board</h2>
+              <p>Message board made with Node.js and Express.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:nodejs-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="simple-icons:express"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>March 2021</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://powerful-bayou-68462.herokuapp.com/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/mini-message-board"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card1"></div>
+            <div class="card-text">
+              <h2>Shopping cart</h2>
+              <p>React shopping-cart made using React Router.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos-typescript-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:react"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:react-router"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>January 2021</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/shopping-cart/#/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/shopping-cart"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card2"></div>
+            <div class="card-text">
+              <h2>Memory Cards</h2>
+              <p>React memory card game with TF2 theme.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos-typescript-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:react"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>January 2021</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/memory-cards/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/memory-cards"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card3"></div>
+            <div class="card-text">
+              <h2>CV Application</h2>
+              <p>CV/resume built using React and TypeScript.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos-typescript-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:react"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>December 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/cv-project/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/cv-project"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card4"></div>
+            <div class="card-text">
+              <h2>Weather App</h2>
+              <p>Weather app made using the OpenWeatherMap API.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:css-3"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos-typescript-icon"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:webpack"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>November 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/weather-app/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/weather-app"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card5"></div>
+            <div class="card-text">
+              <h2>Portfolio V. 1</h2>
+              <p>First attempt at making a web development portfolio.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:sass"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>November 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/sultanbadri.github.io"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card6"></div>
+            <div class="card-text">
+              <h2>Todo List</h2>
+              <p>A todo list using using vanilla JavaScript.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:css-3"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:webpack"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>November 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/todo-list/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/todo-list"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card7"></div>
+            <div class="card-text">
+              <h2>Tic Tac Toe</h2>
+              <p>Tic Tac Toe with single player and two player modes.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:css-3"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>October 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/tic-tac-toe/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/tic-tac-toe"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card8"></div>
+            <div class="card-text">
+              <h2>Restaurant Page</h2>
+              <p>Dynamically rendered restaurant page with JS.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:css-3"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:webpack"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>October 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/restaurant-page/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/restaurant-page"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
+          </div>
+
+          <div class="card lazy-background" id="card">
+            <div class="card-img card9"></div>
+            <div class="card-text">
+              <h2>Virtual Library</h2>
+              <p>Library to store books on the browser with localStorage.</p>
+              <br />
+              <p class="made-with">
+                Made with:
+                <span
+                  class="iconify"
+                  data-icon="logos:html-5"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:css-3"
+                  data-inline="false"
+                ></span>
+                <span
+                  class="iconify"
+                  data-icon="logos:javascript"
+                  data-inline="false"
+                ></span>
+              </p>
+              <br />
+              <p>October 2020</p>
+            </div>
+            <div class="card-buttons">
+              <a
+                href="https://sultanbadri.github.io/virtual-library/"
+                target="_blank"
+                class="demo"
+                ><i class="far fa-eye"></i> Demo</a
+              >
+              <a
+                href="https://github.com/SultanBadri/virtual-library"
+                target="_blank"
+                class="code"
+                ><i class="fas fa-code"></i> Code</a
+              >
+            </div>
           </div>
         </div>
-
-        <div class="card" id="card">
-          <div class="card-img card9"></div>
-          <div class="card-text">
-            <h2>Virtual Library</h2>
-            <p>Library to store books on the browser with localStorage.</p>
-            <br />
-            <p class="made-with">
-              Made with:
-              <span
-                class="iconify"
-                data-icon="logos:html-5"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:css-3"
-                data-inline="false"
-              ></span>
-              <span
-                class="iconify"
-                data-icon="logos:javascript"
-                data-inline="false"
-              ></span>
-            </p>
-            <br />
-            <p>October 2020</p>
-          </div>
-          <div class="card-buttons">
-            <a
-              href="https://sultanbadri.github.io/virtual-library/"
-              target="_blank"
-              class="demo"
-              ><i class="far fa-eye"></i> Demo</a
-            >
-            <a
-              href="https://github.com/SultanBadri/virtual-library"
-              target="_blank"
-              class="code"
-              ><i class="fas fa-code"></i> Code</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <footer id="resume">
-      <h2>
-        <i class="far fa-star"></i> <span>My</span> Resume
-        <i class="far fa-star"></i>
-      </h2>
-      <a class="resume" href="images/resume.pdf" target="_blank"
-        >Download <i class="fas fa-arrow-down"></i
-      ></a>
-    </footer> -->
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
